@@ -24,7 +24,6 @@ body {
 
 .container {
     width: 100%;
-    max-width: 1200px;
     margin: 0 auto;
     overflow: hidden;
     display: flex;
@@ -39,7 +38,7 @@ main {
 
 /* HEADER STYLES */ 
 header {
-    background: #333;
+    background: #242424;
     color: #fff;
     padding: 1rem 2vw;
     position: relative;
@@ -52,13 +51,14 @@ header {
 }
 .header-content {
     display: flex;
+    flex-direction: row;
     align-items: center;
 }
 #header-img {
     border-radius: 20%;
     width: 60px;
     height: 60px;
-    margin-right: 1rem;
+    margin: 0 2rem;
     cursor: pointer;
 }
 header h1 {
@@ -67,17 +67,18 @@ header h1 {
     cursor: pointer;
     padding: 0 2rem;
 }
+
 nav#menu ul {
     display: flex;
     list-style: none;
-    margin: 0;
-    padding: 0;
 }
+
 nav#menu li {
     margin: 0 3rem;
     font-weight: bold;
     text-decoration: underline;;
 }
+
 nav#menu a {
     color: #fff;
     text-decoration: none;
