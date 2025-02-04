@@ -95,42 +95,41 @@ nav#menu a {
 }
 
 .intro-image {
-    width: 450px;
+    width: 50%;
 }
 
 #intro-caption {
     text-align: left;
-    font-size: 14px;
+    font-size: small;
     color: white;
-    padding: 1px;
-    width: 90%;
-    margin-top: 1px;
+    width: 100%;
 }
 
 .intro-text {
-    max-width: 600px;
-    margin-left: 35px;
-    margin: 35px;
+    width: 75%;
+    text-align: left;
+    padding: 2rem;
 }
 
 .intro-text h2 {
-    margin-bottom: 25px;
+    font-size: x-large;
 }
 
 .intro-text p {
-    margin-bottom: 35px;
-    margin-top: 35px;
+    margin-bottom: 3rem;
+    margin-top: 2rem;
 }
 
 #learn-more-btn {
     background-color: white;
     color: #333;
     border: none;
-    padding: 10px 20px;
-    font-size: 16px;
+    padding: 0.8rem;
+    font-size: medium;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 0.5rem;
     font-weight: bold;
+    margin-bottom: 2.5rem;
 }
 
 #learn-more-btn:hover {
