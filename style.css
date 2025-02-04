@@ -1,0 +1,256 @@
+/* GENERAL STYLES */ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #333;
+    color: white;
+    line-height: 1.6;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+}
+
+/* HEADER STYLES */ 
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 2vw;
+    position: relative;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+.header-content {
+    display: flex;
+    align-items: center;
+}
+#header-img {
+    border-radius: 20%;
+    width: 60px;
+    height: 60px;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+header h1 {
+    font-size: 1.5rem;
+    margin: 0;
+    cursor: pointer;
+    padding: 0 2rem;
+}
+nav#menu ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav#menu li {
+    margin: 0 3rem;
+    font-weight: bold;
+    text-decoration: underline;;
+}
+nav#menu a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+/* INTRO STYLES */
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px 0;
+    padding: 15px 10px;
+}
+
+.intro-image {
+    width: 450px;
+}
+
+#intro-caption {
+    text-align: left;
+    font-size: 14px;
+    color: white;
+    padding: 1px;
+    width: 90%;
+    margin-top: 1px;
+}
+
+.intro-text {
+    max-width: 600px;
+    margin-left: 35px;
+    margin: 35px;
+}
+
+.intro-text h2 {
+    margin-bottom: 25px;
+}
+
+.intro-text p {
+    margin-bottom: 35px;
+    margin-top: 35px;
+}
+
+#learn-more-btn {
+    background-color: white;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#learn-more-btn:hover {
+    background-color: #009643;
+    color: white;
+}
+
+
+/* FEATURED PROJECTS STYLES */
+
+.featured-projects {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 10px;
+    flex-wrap: wrap;
+}
+
+.featured-projects h1 {
+    text-align: left;
+    margin-bottom: 20px;
+    position: relative;
+    flex-direction: row;
+}
+
+.project-1 {
+    margin-bottom: 20px;
+    display: flex;
+    width: 100%;
+}
+
+.project-details {
+    display: grid;
+    grid-template-rows: minmax(0, 1fr);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-auto-flow: dense;
+    gap: 10px;
+    max-width: 100%;
+    width: 100%;
+}
+
+.project-details h2 {
+    margin-bottom: 5px;
+    position: relative;
+    grid-area: 1 / 1 / 1 / 3;
+}
+
+.project-details p {
+    margin: auto 0;
+    grid-area: 1 / 1 / 2 / 3;
+    align-self: baseline; /* Adjusts vertical alignment within the grid area */
+    justify-self: start; /* Adjusts horizontal alignment within the grid area */
+    padding: 5px; /* Adds padding around the paragraph */
+    width: 80%;
+    
+}
+
+.project-details button {
+    background-color: white;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    margin: auto;
+    margin-top: 250px;
+    grid-area: 1 / 1 / 2 / 2; 
+    align-self:first baseline; 
+    justify-self: start; 
+}
+
+.project-details button:hover {
+    background-color: #009643;
+}
+
+.project-image {
+    flex-wrap: wrap;
+    grid-area: 1 / 3 / 2 / 4;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.project-image img {
+    width: 300px;
+    border-radius: 10px;
+    margin: 0;
+}
+
+
+/* OTHER PROJECTS STYLES */
+.other-projects {
+    margin: 20px 0;
+}
+
+.other-projects h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* FOOTER STYLES */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.footer p {
+    margin: 0;
+}
+
+
+#coming-soon {
+    color: white;
+    font-size: 50px;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bolder;
+}
