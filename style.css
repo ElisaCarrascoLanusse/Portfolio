@@ -81,14 +81,17 @@ nav#menu ul {
 nav#menu li {
     margin: 0 3rem;
     font-weight: bold;
-    text-decoration: underline;;
 }
 
 nav#menu a {
     color: #fff;
-    text-decoration: none;
+    text-decoration: underline;
     text-transform: uppercase;
     font-size: 1rem;
+}
+
+nav#menu a:hover {
+    color: #009643;
 }
 
 /* INTRO STYLES */
@@ -131,7 +134,7 @@ nav#menu a {
     background-color: white;
     color: #333;
     border: none;
-    padding: 0.8rem;
+    padding: 1rem;
     font-size: medium;
     cursor: pointer;
     border-radius: 0.5rem;
@@ -148,85 +151,89 @@ nav#menu a {
 /* FEATURED PROJECTS STYLES */
 
 .featured-projects {
-    margin: 20px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 15px 10px;
     flex-wrap: wrap;
+}
+
+#featured-divider {
+    width: 70%;
+    height: 0.4rem;
+    background: white;
+    margin-bottom: 2rem;
 }
 
 .featured-projects h1 {
     text-align: left;
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
     position: relative;
     flex-direction: row;
+    font-size: xx-large;
 }
 
-.project-1 {
-    margin-bottom: 20px;
+.project {
     display: flex;
+    align-items: center; 
+    justify-content: space-between; 
     width: 100%;
+    gap: 2rem;
 }
 
 .project-details {
-    display: grid;
-    grid-template-rows: minmax(0, 1fr);
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    grid-auto-flow: dense;
-    gap: 10px;
-    max-width: 100%;
-    width: 100%;
+    flex: 1; 
+    max-width: 60%; 
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    text-align: left;
 }
 
 .project-details h2 {
-    margin-bottom: 5px;
-    position: relative;
-    grid-area: 1 / 1 / 1 / 3;
+    font-size: x-large;
+    margin: 1rem;
+    margin-left: 0;
+    text-align: left;
 }
 
 .project-details p {
-    margin: auto 0;
-    grid-area: 1 / 1 / 2 / 3;
-    align-self: baseline; /* Adjusts vertical alignment within the grid area */
-    justify-self: start; /* Adjusts horizontal alignment within the grid area */
-    padding: 5px; /* Adds padding around the paragraph */
-    width: 80%;
-    
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+    text-align: left;
+    width: 100%;
 }
 
 .project-details button {
     background-color: white;
     color: #333;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
+    border: 1px solid #333;
+    padding: 1rem;
+    font-size: medium;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 0.5rem;
     font-weight: bold;
-    margin: auto;
-    margin-top: 250px;
-    grid-area: 1 / 1 / 2 / 2; 
-    align-self:first baseline; 
-    justify-self: start; 
+    align-self: flex-start; 
+    margin-bottom: 1rem;
 }
 
 .project-details button:hover {
     background-color: #009643;
+    color: white;
 }
 
+/* Right Side: Image */
 .project-image {
-    flex-wrap: wrap;
-    grid-area: 1 / 3 / 2 / 4;
     display: flex;
-    justify-content: right;
-    align-items: center;
+    justify-content: flex-end; 
+    align-items: center; 
 }
 
 .project-image img {
     width: 300px;
-    border-radius: 10px;
-    margin: 0;
+    border-radius: 5%;
+    width: 100%;
+    height: auto;
 }
 
 
@@ -279,8 +286,12 @@ nav#menu a {
         position: absolute;
         top: 1rem;
         right: 2rem;
-        font-size: 150%;
+        font-size: 200%;
         cursor: pointer;
+    }
+    
+    #close-btn:hover {
+        color: #c91919;
     }
 
     /* Form fields */
@@ -303,6 +314,7 @@ nav#menu a {
         border-radius: 0.5rem;
         cursor: pointer;
         font-weight: bold;
+        font-size: large;
         margin: 0 13.5rem;
     }
 
