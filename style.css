@@ -3,12 +3,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 16px;
 }
 
 html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #242424;
 }
 
 body {
@@ -106,6 +108,10 @@ nav#menu a:hover {
     width: 50%;
 }
 
+.intro-image img {
+    border-radius: 1rem;
+}
+
 #intro-caption {
     text-align: left;
     font-size: small;
@@ -128,6 +134,7 @@ nav#menu a:hover {
     margin-top: 2rem;
     text-align: left;
     width: 100%;
+    font-size: medium;
 }
 
 #learn-more-btn {
@@ -198,7 +205,6 @@ nav#menu a:hover {
 
 .project-details p {
     font-size: 1rem;
-    line-height: 1.5;
     margin-bottom: 2rem;
     text-align: left;
     width: 100%;
