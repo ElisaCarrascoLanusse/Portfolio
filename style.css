@@ -181,11 +181,14 @@ nav#menu a:hover {
 }
 
 .project {
+    width:100%;
+    height: auto;
+    background:#f1f1f1;
+    border-radius: 1rem;
     display: flex;
-    align-items: center; 
-    justify-content: space-between; 
-    width: 100%;
-    gap: 2rem;
+    padding: 2rem;
+    justify-content: space-between;
+    padding: 3rem; 
 }
 
 .project-details {
@@ -193,15 +196,18 @@ nav#menu a:hover {
     max-width: 60%; 
     display: flex;
     flex-direction: column;
-    margin-left: 0;
     text-align: left;
+    align-items: center;
+    justify-content: space-between; 
+    box-sizing: border-box;
 }
 
 .project-details h2 {
     font-size: x-large;
-    margin: 1rem;
-    margin-left: 0;
+    margin-bottom: 1rem;
     text-align: left;
+    color: #333;
+    margin-left: -2rem;
 }
 
 .project-details p {
@@ -209,11 +215,12 @@ nav#menu a:hover {
     margin-bottom: 2rem;
     text-align: left;
     width: 100%;
+    color: #333;
 }
 
 .project-details button {
-    background-color: white;
-    color: #333;
+    background-color: #333;
+    color: white;
     border: 1px solid #333;
     padding: 1rem;
     font-size: medium;
@@ -221,7 +228,6 @@ nav#menu a:hover {
     border-radius: 0.5rem;
     font-weight: bold;
     align-self: flex-start; 
-    margin-bottom: 1rem;
 }
 
 .project-details button:hover {
