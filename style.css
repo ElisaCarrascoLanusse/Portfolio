@@ -169,6 +169,7 @@ nav#menu a:hover {
     height: 0.4rem;
     background: white;
     margin-bottom: 2rem;
+    border-radius: 0.5rem;
 }
 
 .featured-projects h1 {
