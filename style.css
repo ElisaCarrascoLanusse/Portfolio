@@ -188,7 +188,8 @@ nav#menu a:hover {
     display: flex;
     padding: 2rem;
     justify-content: space-between;
-    padding: 3rem; 
+    padding: 3.5rem; 
+    margin: 1rem;
 }
 
 .project-details {
@@ -197,7 +198,7 @@ nav#menu a:hover {
     display: flex;
     flex-direction: column;
     text-align: left;
-    align-items: center;
+    align-items: left;
     justify-content: space-between; 
     box-sizing: border-box;
 }
@@ -207,7 +208,7 @@ nav#menu a:hover {
     margin-bottom: 1rem;
     text-align: left;
     color: #333;
-    margin-left: -2rem;
+    
 }
 
 .project-details p {
@@ -245,7 +246,6 @@ nav#menu a:hover {
 .project-image img {
     width: 300px;
     border-radius: 5%;
-    width: 100%;
     height: auto;
 }
 
@@ -288,7 +288,15 @@ nav#menu a:hover {
         position: relative;
     }
 
-    #contact-form h2, p {
+    #contact-form h2 {
+        align-self: center;
+        text-align: center;
+        width: 100%;
+        font-size: x-large;
+
+    }
+    
+    #contact-form p {
         align-self: center;
         text-align: center;
         width: 80%;
