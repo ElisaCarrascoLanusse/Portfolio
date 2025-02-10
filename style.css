@@ -66,6 +66,7 @@ header {
     width: 60px;
     height: 60px;
     margin: 0 2rem;
+    opacity: 100%;
     cursor: pointer;
 }
 header h1 {
@@ -365,7 +366,37 @@ footer {
 }
 
 .footer p {
+    margin: 2rem;
+}
+
+.footer #social-media {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 0;
+    list-style: none;
+}
+
+.footer #social-media li {
+    margin: 0 1rem;
+}
+
+footer #social-media li a {
+    font-size: 25rem; 
+    color: white;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 0;
+}
+
+
+.footer #social-media img {
+    width: 3rem;
+    height: auto;
+    cursor: pointer;
 }
 
 

@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Select the about button
     const aboutButton = document.querySelector("#about");
     // Navigate to play.html when the play button is clicked
-    playButton.addEventListener("click", () => {
+    aboutButton.addEventListener("click", () => {
         window.location.href = "about.html";
     });
 });
