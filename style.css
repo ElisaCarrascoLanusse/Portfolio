@@ -189,7 +189,13 @@ nav#menu a:hover {
     padding: 2rem;
     justify-content: space-between;
     padding: 3.5rem; 
-    margin: 1rem;
+    margin: 2rem 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.252);
+
+    /* Parallax */
+    position: sticky;
+    top: 10%;
+    overflow: hidden;
 }
 
 .project-details {
@@ -248,6 +254,8 @@ nav#menu a:hover {
     border-radius: 5%;
     height: auto;
 }
+
+
 
 
 /* OTHER PROJECTS STYLES */

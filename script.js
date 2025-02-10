@@ -1,7 +1,7 @@
 // Wait for the DOM to be fully loaded before running the script
 document.addEventListener("DOMContentLoaded", () => {
     // Select the contact button in the menu that links to the contact section
-    const contactButton = document.querySelector("#menu a[href='#contact-section']");
+    const contactButton = document.querySelector(`#menu a[href='#contact-section']`);
     
     // Select the container element for the contact form
     const contactFormContainer = document.getElementById("contact-form-container");
