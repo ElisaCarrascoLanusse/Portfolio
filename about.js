@@ -75,12 +75,4 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-// LEARN MORE BUTTON //
-document.addEventListener("DOMContentLoaded", () => {
-    // Select the learn more button
-    const learnMoreButton = document.querySelector("#learn-more-btn");
-    // Navigate to about.html when the learn more button is clicked
-    learnMoreButton.addEventListener("click", () => {
-        window.location.href = "about.html";
-    });
-});
+// FOOTER //
