@@ -511,9 +511,37 @@ footer #social-media li a {
     justify-content: flex-end;
     width: 100%;
     height: 25rem; 
+    background-image: ; 
+    background-size: cover;
+    background-position: center;
+    border-radius: 1rem;
+    overflow: hidden;
+    margin: 1rem 0;
+}
+
+#atip-project  {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    height: 25rem; 
     background-image: url(https://github.com/ElisaCarrascoLanusse/Portfolio/blob/main/assets/Labor-Trafficking.png?raw=true); 
     background-size: cover;
     background-position: center;
+    border-radius: 1rem;
+    overflow: hidden;
+    margin: 1rem 0;
+}
+
+#memory-project  {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    height: 25rem; 
+    background-image: url(https://github.com/ElisaCarrascoLanusse/Portfolio/blob/main/assets/memory-matters.png?raw=true); 
+    background-size: cover;
+    background-position: center 100%;
     border-radius: 1rem;
     overflow: hidden;
     margin: 1rem 0;
