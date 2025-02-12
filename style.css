@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 html {
@@ -17,7 +17,7 @@ body {
     font-family: Arial, sans-serif;
     background-color: #333;
     color: white;
-    line-height: 1.6;
+    line-height: 1.8;
     display: flex; 
     flex-direction: column; 
     justify-content: center; 
@@ -294,6 +294,7 @@ nav#menu a:hover {
         display: flex;
         justify-content: center;
         align-items: center;
+        z-index: 1000;
     }
 
     /* Form styling */
@@ -304,7 +305,7 @@ nav#menu a:hover {
         padding: 2rem;
         border-radius: 1rem;
         width: 50%;
-        position: relative;
+        position: absolute;
     }
 
     #contact-form h2 {
@@ -443,4 +444,22 @@ footer #social-media li a {
     object-position: center 70%;
 }
 
+.about-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+}
 
+.about-text h2 {
+    font-size: xx-large;
+    margin-bottom: 0.5rem;
+}
+
+.about-text p {
+    margin: 0.5rem 5rem;
+    text-align: justify;
+    text-indent: 5rem;
+    font-size: medium;
+}
