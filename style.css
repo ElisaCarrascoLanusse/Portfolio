@@ -463,3 +463,20 @@ footer #social-media li a {
     text-indent: 5rem;
     font-size: medium;
 }
+
+#cv-btn {
+    background-color: white;
+    color: #333;
+    border: none;
+    padding: 1rem;
+    font-size: medium;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+#cv-btn:hover {
+    background-color: #009643;
+    color: white;
+}
