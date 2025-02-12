@@ -102,7 +102,7 @@ nav#menu a:hover {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2rem 0;
+    padding: 1rem 0;
 }
 
 .intro-image {
@@ -165,7 +165,7 @@ nav#menu a:hover {
     flex-wrap: wrap;
 }
 
-#featured-divider {
+#featured-divider, #other-divider {
     width: 70%;
     height: 0.4rem;
     background: white;
@@ -272,13 +272,6 @@ nav#menu a:hover {
     font-size: xx-large;
 }
 
-#other-divider {
-    width: 70%;
-    height: 0.4rem;
-    background: white;
-    border-radius: 0.5rem;
-}
-
 
 
 /* CONTACT FORM */
@@ -372,12 +365,12 @@ footer {
     background: #242424;
     color: #fff;
     text-align: center;
-    padding: 10px 0;
+    padding: 1rem 0;
     width: 100%;
 }
 
 .footer p {
-    margin: 2rem;
+    margin: 1rem;
 }
 
 .footer #social-media {
@@ -385,7 +378,7 @@ footer {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin: 3rem 0;
+    margin: 1rem 0;
     list-style: none;
 }
 
@@ -411,12 +404,20 @@ footer #social-media li a {
 }
 
 
-#coming-soon {
+.coming-soon {
+    display: flex;
+    flex-direction: column;
     color: white;
-    font-size: 50px;
-    margin-top: 20px;
+    font-size: xx-large;
+    margin: 2rem auto;
     text-align: center;
     font-weight: bolder;
+    width: 100%;
+    padding: 2rem;
+    background-color: #ce1313;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
 }
 
 
