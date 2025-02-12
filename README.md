@@ -8,6 +8,10 @@ Welcome to my portfolio! I'm a sociologist with a passion for the creation and m
 
 - [ ] Fix header image (changes color when outside of the main page (index.html))
 - [ ] Other projects carousel
+- [ ] Work Page
+- [ ] Play page
+- [ ] Project pages
+- [ ] Add functionality to contact form
 
 ## Project Structure
 
@@ -18,5 +22,7 @@ Welcome to my portfolio! I'm a sociologist with a passion for the creation and m
     work.html: Work projects.
 
     script.js: Handles the UI and fetch requests.
+    about.js: About UI and fetch requests.
+    work.js: Work UI and fetch requests.
 
     style.css: Style sheet.
