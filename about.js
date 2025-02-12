@@ -45,6 +45,16 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
+// CV BUTTON //
+document.addEventListener("DOMContentLoaded", () => {
+    // Select the CV button
+    const cvButton = document.querySelector("#cv-btn");
+    // Navigate to the raw GitHub link when the CV button is clicked
+    cvButton.addEventListener("click", () => {
+        window.open("https://drive.google.com/file/d/1W7g7GW2SonRuBolkKPO1-m8ETPMCAj5a/view?usp=sharing" , "_blank");
+    });
+});
+
 // CONTACT PAGE //
 document.addEventListener("DOMContentLoaded", () => {
     // Select the contact button in the menu that links to the contact section
@@ -74,5 +84,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 });
+
+
 
 // FOOTER //
