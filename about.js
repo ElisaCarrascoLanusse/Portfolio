@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const cvButton = document.querySelector("#cv-btn");
     // Navigate to the raw GitHub link when the CV button is clicked
     cvButton.addEventListener("click", () => {
-        window.open("https://drive.google.com/file/d/1W7g7GW2SonRuBolkKPO1-m8ETPMCAj5a/view?usp=sharing" , "_blank");
+        window.open("https://drive.google.com/file/d/1H79gu7VVV_ltthRGdb4MyrxPU6kkXT_1/view?usp=sharing" , "_blank");
     });
 });
 
