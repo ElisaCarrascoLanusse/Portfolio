@@ -255,8 +255,6 @@ nav#menu a:hover {
 }
 
 
-
-
 /* OTHER PROJECTS STYLES */
 .other-projects {
     display: flex;
@@ -484,6 +482,10 @@ footer #social-media li a {
 
 
 /* WORK PAGE STYLES */
+#work-body {
+    background-color: #ebebeb;
+}
+
 .work-introduction {
     display: flex;
     flex-direction: column;
@@ -494,6 +496,8 @@ footer #social-media li a {
 .work-introduction h1 {
     font-size: xxx-large;
     margin-top: 2rem;
+    color: #333;
+    text-align: center;
 }
 
 .work-projects {
@@ -510,13 +514,13 @@ footer #social-media li a {
     align-items: center;
     justify-content: flex-end;
     width: 100%;
-    height: 25rem; 
-    background-image: ; 
+    height: 30rem; 
     background-size: cover;
     background-position: center;
     border-radius: 1rem;
     overflow: hidden;
     margin: 1rem 0;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.361);
 }
 
 #atip-project  {
@@ -585,8 +589,8 @@ footer #social-media li a {
 
 .work-project-details ul {
     list-style: circle;
-    padding-left: 2rem;
     font-weight: bold;
+    margin-left: 1rem;
 }
 
 .work-project-details li {
@@ -595,16 +599,14 @@ footer #social-media li a {
 }
 
 .work-project button {
-    background-color: #333;
-    color: white;
+    background-color: white;
+    color: #333;
     border: 1px solid #333;
     padding: 1rem;
     font-size: medium;
     cursor: pointer;
     border-radius: 0.5rem;
     font-weight: bold;
-    align-self: flex-end;
-    margin: 2rem;
 }
 
 .work-project button:hover {
