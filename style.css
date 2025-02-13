@@ -166,7 +166,7 @@ nav#menu a:hover {
 }
 
 #featured-divider, #other-divider {
-    width: 70%;
+    width: 60%;
     height: 0.4rem;
     background: white;
     border-radius: 0.5rem;
@@ -189,7 +189,7 @@ nav#menu a:hover {
     justify-content: space-between;
     padding: 3.5rem; 
     margin: 2rem 1rem;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.252);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.361);
 
     /* Parallax */
     position: sticky;
@@ -519,8 +519,9 @@ footer #social-media li a {
     background-position: center;
     border-radius: 1rem;
     overflow: hidden;
-    margin: 1rem 0;
+    margin: 2rem 1rem;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.361);
+    
 }
 
 #atip-project  {
