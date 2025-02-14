@@ -6,7 +6,7 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">  
 </head>
-<body>
+<body id="play-body">
 <div class="container">
     <!-- Header -->
     <header> 
@@ -14,7 +14,7 @@
             <img 
                 id="header-img" 
                 alt="Drawing of Elisa" 
-                src="hhttps://github.com/ElisaCarrascoLanusse/Portfolio/blob/main/assets/header-img.jpeg?raw=true"
+                src="https://github.com/ElisaCarrascoLanusse/Portfolio/blob/main/assets/header-img.jpeg?raw=true"
                 width="75"
             >
             <h1 id="header-h1">Elisa Carrasco Lanusse</h1>
@@ -31,8 +31,55 @@
 </div>
 
 <main>
-    
+    <!-- Introduction -->
+    <section class="play-introduction">
+        <h1>PLAY</h1>
+    </section>
 
+    <section class="play-projects">
+
+        <div class="play-project" id="theology-project">
+            <div class="overlay" id="theology-overlay">
+                <div class="play-project-details">
+                    <h2>Theology of Love: A Fallible God</h2> 
+                    <p>A series of illustrations inspired by Jorge Luis Borges’ phrase "To fall in love is to create a religion that has a fallible god." As a collection they form an instruction manual that breaks down the phrase in five steps.</p>
+                    <button class="button" id="theology-btn">Learn More</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="play-project" id="memory-project">
+            <div class="overlay" id="memory-overlay">
+                <div class="play-project-details">
+                    <h2>Memory Matters: Comparative Analysis of Memorialization</h2> 
+                    <p>As a researcher on Memory Matters, I collaborated with Dr. Quinsaat and a team to develop an analytical framework for memorial sites in Bosnia, Cambodia, and Rwanda. I focused on the Kigali Genocide Memorial, contributing to site analysis and the broader framework.</p>
+                    <ul id="memory-list">
+                        <li>Role: Research and writing</li>
+                        <li>Tools: Zotero and Canva
+                        <li>Duration: 4 months</li>
+                    </ul>
+                    <button class="button" id="memory-btn">Learn More</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="play-project" id="laboratoria-project">
+            <div class="overlay" id="laboratoria-overlay">
+                <div class="play-project-details">
+                    <h2>Laboratoria: Unlocking Engagement</h2> 
+                    <p>As an intern at Laboratoria, I worked closely with the partnerships team to improve the design of newsletters and foster deeper bonds with students, graduates, and stakeholders. I conducted UX research and design to enhance the communication strategy.</p>
+                    <ul id="laboratoria-list">
+                        <li>Role: Research, design, and user testing</li>
+                        <li>Tools: Figma, Procreate, Hubsport, R Studio
+                        <li>Duration: 6 months</li>
+                    </ul>
+                    <button class="button" id="laboratoria-btn">Learn More</button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    
     <!-- Contact Form (Hidden by Default) -->
     <div id="contact-form-container" class="hidden">
         <div id="contact-form">
