@@ -552,6 +552,21 @@ footer #social-media li a {
     margin: 1rem 0;
 }
 
+#laboratoria-project  {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 25rem; 
+    background-image: url(https://github.com/ElisaCarrascoLanusse/Portfolio/blob/main/assets/laboratoria-cover.PNG?raw=true); 
+    background-size: cover;
+    background-position: 10% center;
+    border-radius: 1rem;
+    overflow: hidden;
+    margin: 1rem 0;
+    margin-bottom: 5rem;
+}
+
 /* Overlay */
 .overlay {
     position: absolute;
