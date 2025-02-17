@@ -67,6 +67,8 @@ document.addEventListener("DOMContentLoaded", () => {
         contactFormContainer.classList.add("hidden"); // Add the 'hidden' class to hide the form
     });
 
+    
+
     // Close the form when clicking outside of it
     contactFormContainer.addEventListener("click", (event) => {
         if (event.target === contactFormContainer) { // Check if the click was outside the form (on the container)

@@ -292,25 +292,26 @@ nav#menu a:hover {
     #contact-form {
         display: flex;
         flex-direction: column;
+        align-items: center;
         background: #333;
         padding: 2rem;
         border-radius: 1rem;
         width: 50%;
-        position: absolute;
+        position: relative;
+        margin: 0 auto;
     }
-
+    
     #contact-form h2 {
-        align-self: center;
         text-align: center;
         width: 100%;
         font-size: x-large;
-
+        margin-bottom: 1rem;
     }
     
     #contact-form p {
-        align-self: center;
         text-align: center;
         width: 80%;
+        margin-bottom: 1rem;
     }
 
     /* Close button */
@@ -326,19 +327,26 @@ nav#menu a:hover {
         color: #c91919;
     }
 
+    /* Form fields container */
+    #contact-form form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+     align-items: center;
+    }
+
     /* Form fields */
     form input, form textarea {
         width: 80%;
-        margin: 0.5rem 3.5rem;
+        margin: 0.5rem 0;
         padding: 1rem;
         border: 0.1rem solid #ccc;
         border-radius: 0.5rem;
-        justify-content: center;
     }
 
     /* Submit button */
     form button {
-        width: 25%;
+        width: 50%;
         padding: 1rem;
         color: #333;
         background: white;
@@ -347,15 +355,12 @@ nav#menu a:hover {
         cursor: pointer;
         font-weight: bold;
         font-size: large;
-        margin: 0 13.5rem;
     }
 
     form button:hover {
         background: #009643;
         color: #fff;
     }
-
-
 
 
 /* FOOTER STYLES */
