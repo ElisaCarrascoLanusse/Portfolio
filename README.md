@@ -1,4 +1,4 @@
-# [Portfolio](https://elisacarrascolanusse.github.io/Portfolio/)
+# [Portfolio](https://elisacarrascolanusse.github.io/portfolio/)
 
 Hi, I'm Elisa!
 
