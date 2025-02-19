@@ -7,90 +7,35 @@
     <link rel="stylesheet" href="styles/style.css">  
 </head>
 <body id="play-body">
-<div class="container">
-    <!-- Header -->
-    <header> 
-        <div class="header-content">
-            <img 
-                id="header-img" 
-                alt="Drawing of Elisa" 
-                src="https://github.com/ElisaCarrascoLanusse/Portfolio/blob/main/assets/images/header-img.jpeg?raw=true"
-                width="75"
-            >
-            <h1 id="header-h1">Elisa Carrasco Lanusse</h1>
-        </div>
-        <nav id="menu">
-            <ul>
-                <li><a href="#work-section" id="work">Work</a></li>
-                <li><a href="#play-section" id="play">Play</a></li>
-                <li><a href="#about-section" id="about">About Me</a></li>
-                <li><a href="#contact-section" id="contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-</div>
 
-<main>
-    <!-- Introduction -->
-    <section class="play-introduction">
-        <h1>PLAY</h1>
-    </section>
+    <div id="header"></div>
 
-    <section class="play-projects">
+    <main>
+        <!-- Introduction -->
+        <section class="play-introduction">
+            <h1>PLAY</h1>
+        </section>
 
-        <div class="play-project" id="theology-project">
-            <div class="overlay" id="theology-overlay">
-                <div class="play-project-details">
-                    <h2>Theology of Love: A Fallible God</h2> 
-                    <p>A series of illustrations inspired by Jorge Luis Borges’ phrase "To fall in love is to create a religion that has a fallible god." As a collection they form an instruction manual that breaks down the phrase in five steps.</p>
-                    <button class="button" id="theology-btn">Learn More</button>
+        <section class="play-projects">
+
+            <div class="play-project" id="theology-project">
+                <div class="overlay" id="theology-overlay">
+                    <div class="play-project-details">
+                        <h2>Theology of Love: A Fallible God</h2> 
+                        <p>A series of illustrations inspired by Jorge Luis Borges’ phrase "To fall in love is to create a religion that has a fallible god." As a collection they form an instruction manual that breaks down the phrase in five steps.</p>
+                        <button class="button" id="theology-btn">Learn More</button>
+                    </div>
                 </div>
             </div>
-        </div>
 
-    </section>
+        </section>
+        
+        <div id="contact-form"></div>
+
+    </main>
     
-    <!-- Contact Form (Hidden by Default) -->
-    <div id="contact-form-container" class="hidden">
-        <div id="contact-form">
-            <span id="close-btn">&times;</span>
-            <h2>Contact Me</h2>
-            <p>Feel free to reach out to me for any inquiries or collaborations! I'm always looking for new projects and hobbies to work on, so don't hesitate to send me a message. I'm also available for any questions or comments you may have about my work or my portfolio. I look forward to hearing from you!</p>
-            <form id="contactForm">
-                <input type="text" id="name" name="name" placeholder="Name" required>
-
-                <input type="email" id="email" name="email" placeholder="Email" required>
-
-                <textarea id="message" name="message" placeholder="Message" required></textarea>
-
-                <button type="submit" id="submit-contact-form">Send</button>
-            </form>
-        </div>
-    </div>
-
-</main>
-
-
-
-
-<!-- Footer -->
-<footer>
-    <div class="footer">
-        <ul id="social-media">
-            <li><a href="https://www.linkedin.com/in/elisa-carrasco-lanusse/">
-                <img id="linkedin" src="https://github.com/ElisaCarrascoLanusse/Portfolio/blob/main/assets/icons/linkedin-img.png?raw=true" alt="LinkedIn">
-            </a></li>
-            <li><a href="https://www.instagram.com/eli_carrasco05/">
-                <img id="instagram" src="https://github.com/ElisaCarrascoLanusse/Portfolio/blob/main/assets/icons/instagram-img.png?raw=true" alt="Instagram">
-            </a></li>
-            <li><a href="https://github.com/ElisaCarrascoLanusse">
-                <img id="github" src="https://github.com/ElisaCarrascoLanusse/Portfolio/blob/main/assets/icons/github-img.png?raw=true" alt="GitHub">
-            </a></li>
-        </ul>
-        <p>Created with love by Elisa Carrasco Lanusse 2025</p>
-    </div>
-</footer>
-
-<script src="scripts/main.js"></script>
+    <div id="footer"></div>
+    
+    <script src="scripts/main.js"></script>
 </body>
 </html>
