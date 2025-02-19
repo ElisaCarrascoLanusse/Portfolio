@@ -1,90 +1,96 @@
-// HEADER //
-document.addEventListener("DOMContentLoaded", () => {
-    // Select the header image and the h1 element
-    const headerImage = document.querySelector("#header-img");
-    const headerTitle = document.querySelector("#header-h1");
+document.addEventListener("DOMContentLoaded", function () {
+    // Function to load an HTML component into a specified element
+    function loadComponent(elementId, filePath, callback) {
+        fetch(filePath)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`Could not fetch ${filePath}: ${response.statusText}`);
+                }
+                return response.text();
+            })
+            .then(data => {
+                document.getElementById(elementId).innerHTML = data;
+                if (callback) callback(); // Ensure event listeners are set after the component is loaded
+            })
+            .catch(error => {
+                console.error('Error loading component:', error);
+            });
+    }
 
-    // Navigate to index.html when the header image is clicked
-    headerImage.addEventListener("click", () => {
-        window.location.href = "index.html";
-    });
+    // Load header and footer, then attach event listeners
+    loadComponent('header', 'components/header.html', attachHeaderEvents);
+    loadComponent('footer', 'components/footer.html');
 
-    // Navigate to index.html when the header title is clicked
-    headerTitle.addEventListener("click", () => {
-        window.location.href = "index.html";
-    });
-});
+    function attachHeaderEvents() {
+        // Select the header image and title
+        const headerImage = document.querySelector("#header-img");
+        const headerTitle = document.querySelector("#header-h1");
 
-// WORK PAGE //
-document.addEventListener("DOMContentLoaded", () => {
-    // Select the work button
-    const workButton = document.querySelector("#work");
-    // Navigate to work.html when the work button is clicked
-    workButton.addEventListener("click", () => {
-        window.location.href = "work.html";
-    });
-});
-
-// PLAY PAGE //
-document.addEventListener("DOMContentLoaded", () => {
-    // Select the play button
-    const playButton = document.querySelector("#play");
-    // Navigate to play.html when the play button is clicked
-    playButton.addEventListener("click", () => {
-        window.location.href = "play.html";
-    });
-});
-
-// ABOUT PAGE //
-document.addEventListener("DOMContentLoaded", () => {
-    // Select the about button
-    const aboutButton = document.querySelector("#about");
-    // Navigate to play.html when the play button is clicked
-    aboutButton.addEventListener("click", () => {
-        window.location.href = "about.html";
-    });
-});
-
-// CV BUTTON //
-document.addEventListener("DOMContentLoaded", () => {
-    // Select the CV button
-    const cvButton = document.querySelector("#cv-btn");
-    // Navigate to the raw GitHub link when the CV button is clicked
-    cvButton.addEventListener("click", () => {
-        window.open("https://drive.google.com/file/d/1H79gu7VVV_ltthRGdb4MyrxPU6kkXT_1/view?usp=sharing" , "_blank");
-    });
-});
-
-// CONTACT PAGE //
-document.addEventListener("DOMContentLoaded", () => {
-    // Select the contact button in the menu that links to the contact section
-    const contactButton = document.querySelector(`#menu a[href='#contact-section']`);
-    
-    // Select the container element for the contact form
-    const contactFormContainer = document.getElementById("contact-form-container");
-    
-    // Select the close button inside the contact form
-    const closeBtn = document.getElementById("close-btn");
-
-    // Show the contact form when the Contact button is clicked
-    contactButton.addEventListener("click", (event) => {
-        event.preventDefault(); // Prevent the default anchor behavior (jumping to the section)
-        contactFormContainer.classList.remove("hidden"); // Remove the 'hidden' class to show the form
-    });
-
-    // Close the form when clicking the close button
-    closeBtn.addEventListener("click", () => {
-        contactFormContainer.classList.add("hidden"); // Add the 'hidden' class to hide the form
-    });
-
-    // Close the form when clicking outside of it
-    contactFormContainer.addEventListener("click", (event) => {
-        if (event.target === contactFormContainer) { // Check if the click was outside the form (on the container)
-            contactFormContainer.classList.add("hidden"); // Add the 'hidden' class to hide the form
+        if (headerImage) {
+            headerImage.addEventListener("click", () => {
+                window.location.href = "../index.html";
+            });
         }
-    });
+
+        if (headerTitle) {
+            headerTitle.addEventListener("click", () => {
+                window.location.href = "../index.html";
+            });
+        }
+
+        // Attach event listeners for navigation buttons
+        attachNavigationEvents();
+    }
+
+    function attachNavigationEvents() {
+        const pages = [
+            { id: "#work", url: "../work.html" },
+            { id: "#play", url: "../play.html" },
+            { id: "#about", url: "../about.html" },
+        ];
+
+        pages.forEach(page => {
+            const button = document.querySelector(page.id);
+            if (button) {
+                button.addEventListener("click", () => {
+                    window.location.href = page.url;
+                });
+            }
+        });
+
+        attachContactFormEvents();
+    }
+
+    function attachContactFormEvents() {
+        const contactButton = document.querySelector(`a[href='#contact-section']`);
+        const contactFormContainer = document.getElementById("contact-form-container");
+        const closeBtn = document.getElementById("close-btn");
+
+        if (contactButton && contactFormContainer && closeBtn) {
+            contactButton.addEventListener("click", (event) => {
+                event.preventDefault();
+                contactFormContainer.classList.remove("hidden");
+            });
+
+            closeBtn.addEventListener("click", () => {
+                contactFormContainer.classList.add("hidden");
+            });
+
+            // Close form when clicking outside
+            contactFormContainer.addEventListener("click", (event) => {
+                if (event.target === contactFormContainer) {
+                    contactFormContainer.classList.add("hidden");
+                }
+            });
+        }
+    }
+
+   // CV Button Event Listener
+   const cvButton = document.querySelector("#cv-btn");
+   if (cvButton) {
+       cvButton.addEventListener("click", () => {
+           window.open("https://drive.google.com/file/d/1H79gu7VVV_ltthRGdb4MyrxPU6kkXT_1/view?usp=sharing", "_blank");
+       });
+   }
+   
 });
-
-
-
-// FOOTER //
