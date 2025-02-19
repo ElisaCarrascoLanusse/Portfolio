@@ -1,3 +1,29 @@
+// COMPONENTS //
+document.addEventListener("DOMContentLoaded", function() {
+    // Function to load an HTML component into a specified element
+    function loadComponent(elementId, filePath) {
+      fetch(filePath)
+        .then(response => {
+          if (!response.ok) {
+            throw new Error(`Could not fetch ${filePath}: ${response.statusText}`);
+          }
+          return response.text();
+        })
+        .then(data => {
+          document.getElementById(elementId).innerHTML = data;
+        })
+        .catch(error => {
+          console.error('Error loading component:', error);
+        });
+    }
+  
+    // Load header and footer
+    loadComponent('header', 'components/header.html');
+    loadComponent('footer', 'components/footer.html');
+  });
+  
+  
+
 // HEADER //
 document.addEventListener("DOMContentLoaded", () => {
     // Select the header image and the h1 element
