@@ -20,6 +20,8 @@ document.addEventListener("DOMContentLoaded", function () {
     // Load header and footer, then attach event listeners
     loadComponent('header', 'components/header.html', attachHeaderEvents);
     loadComponent('footer', 'components/footer.html');
+    // Load contact form and attach events after it is loaded
+    loadComponent('contact-form', 'components/contact.html', attachContactFormEvents);
 
     function attachHeaderEvents() {
         // Select the header image and title
@@ -58,26 +60,27 @@ document.addEventListener("DOMContentLoaded", function () {
                 });
             }
         });
-
-        attachContactFormEvents();
     }
 
     function attachContactFormEvents() {
-        const contactButton = document.querySelector(`a[href='#contact-section']`);
+        // Ensure the elements are available after the contact form is loaded
+        const contactSectionLink = document.querySelector(`a[href='#contact-section']`);
         const contactFormContainer = document.getElementById("contact-form-container");
-        const closeBtn = document.getElementById("close-btn");
+        const closeButton = document.getElementById("close-btn");
 
-        if (contactButton && contactFormContainer && closeBtn) {
-            contactButton.addEventListener("click", (event) => {
-                event.preventDefault();
-                contactFormContainer.classList.remove("hidden");
+        if (contactSectionLink && contactFormContainer && closeButton) {
+            // Show the contact form when the link is clicked
+            contactSectionLink.addEventListener("click", (event) => {
+                event.preventDefault();  // Prevent default anchor link behavior
+                contactFormContainer.classList.remove("hidden"); // Show the contact form
             });
 
-            closeBtn.addEventListener("click", () => {
+            // Hide the contact form when the close button is clicked
+            closeButton.addEventListener("click", () => {
                 contactFormContainer.classList.add("hidden");
             });
 
-            // Close form when clicking outside
+            // Close the contact form when clicking outside the form container
             contactFormContainer.addEventListener("click", (event) => {
                 if (event.target === contactFormContainer) {
                     contactFormContainer.classList.add("hidden");

@@ -21,6 +21,9 @@ document.addEventListener("DOMContentLoaded", function () {
     loadComponent('header', 'components/header.html', attachHeaderEvents);
     loadComponent('footer', 'components/footer.html');
 
+    // Load contact form and attach events after it is loaded
+    loadComponent('contact-form', 'components/contact.html', attachContactFormEvents);
+
     function attachHeaderEvents() {
         // Select the header image and title
         const headerImage = document.querySelector("#header-img");
@@ -46,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const pages = [
             { id: "#work", url: "../work.html" },
             { id: "#play", url: "../play.html" },
-            { id: "#about", url: "../about.html" },
+            { id: "#about", url: "../about.html" }
         ];
 
         pages.forEach(page => {
@@ -57,40 +60,42 @@ document.addEventListener("DOMContentLoaded", function () {
                 });
             }
         });
-
-        attachContactFormEvents();
     }
 
     function attachContactFormEvents() {
-        const contactButton = document.querySelector(`a[href='#contact-section']`);
-        const contactFormContainer = document.getElementById("contact-form-container");
-        const closeBtn = document.getElementById("close-btn");
+        const contactButton = document.querySelector("#contact");
+        const contactFormContainer = document.querySelector("#contact-form-container");
+        const closeBtn = document.querySelector("#close-btn");
 
-        if (contactButton && contactFormContainer && closeBtn) {
-            contactButton.addEventListener("click", (event) => {
-                event.preventDefault();
-                contactFormContainer.classList.remove("hidden");
-            });
-
-            closeBtn.addEventListener("click", () => {
-                contactFormContainer.classList.add("hidden");
-            });
-
-            // Close form when clicking outside
-            contactFormContainer.addEventListener("click", (event) => {
-                if (event.target === contactFormContainer) {
-                    contactFormContainer.classList.add("hidden");
-                }
-            });
+        if (!contactButton || !contactFormContainer || !closeBtn) {
+            console.error("Contact form elements not found.");
+            return;
         }
+
+        // Show contact form when clicking contact button
+        contactButton.addEventListener("click", (event) => {
+            event.preventDefault();
+            contactFormContainer.classList.remove("hidden");
+        });
+
+        // Close contact form when clicking close button
+        closeBtn.addEventListener("click", () => {
+            contactFormContainer.classList.add("hidden");
+        });
+
+        // Close contact form when clicking outside the form
+        contactFormContainer.addEventListener("click", (event) => {
+            if (event.target === contactFormContainer) {
+                contactFormContainer.classList.add("hidden");
+            }
+        });
     }
 
-   // CV Button Event Listener
-   const cvButton = document.querySelector("#cv-btn");
-   if (cvButton) {
-       cvButton.addEventListener("click", () => {
-           window.open("https://drive.google.com/file/d/1H79gu7VVV_ltthRGdb4MyrxPU6kkXT_1/view?usp=sharing", "_blank");
-       });
-   }
-   
+    // CV Button Event Listener
+    const cvButton = document.querySelector("#cv-btn");
+    if (cvButton) {
+        cvButton.addEventListener("click", () => {
+            window.open("https://drive.google.com/file/d/1H79gu7VVV_ltthRGdb4MyrxPU6kkXT_1/view?usp=sharing", "_blank");
+        });
+    }
 });
