@@ -46,10 +46,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function attachNavigationEvents() {
         const pages = [
-            { id: "#work", url: "../work.html" },
-            { id: "#play", url: "../play.html" },
-            { id: "#about", url: "../about.html" },
-            { id: "#learn-more-btn", url: "../about.html" }
+            { id: "#work", url: "work.html" },
+            { id: "#play", url: "play.html" },
+            { id: "#about", url: "about.html" },
+            { id: "#learn-more-btn", url: "about.html" }
         ];
 
         pages.forEach(page => {
