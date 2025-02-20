@@ -31,13 +31,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if (headerImage) {
             headerImage.addEventListener("click", () => {
-                window.location.href = "../index.html";
+                window.location.href = "index.html";
             });
         }
 
         if (headerTitle) {
             headerTitle.addEventListener("click", () => {
-                window.location.href = "../index.html";
+                window.location.href = "index.html";
             });
         }
 
@@ -47,9 +47,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function attachNavigationEvents() {
         const pages = [
-            { id: "#work", url: "../work.html" },
-            { id: "#play", url: "../play.html" },
-            { id: "#about", url: "../about.html" }
+            { id: "#work", url: "work.html" },
+            { id: "#play", url: "play.html" },
+            { id: "#about", url: "about.html" }
         ];
 
         pages.forEach(page => {
