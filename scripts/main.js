@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // Load header and footer, then attach event listeners
-    loadComponent('header', 'components/header.html', attachHeaderEvents);
+    loadComponent('header', '/components/header.html', attachHeaderEvents);
     loadComponent('footer', 'components/footer.html');
     // Load contact form and attach events after it is loaded
     loadComponent('contact-form', 'components/contact.html', attachContactFormEvents);
