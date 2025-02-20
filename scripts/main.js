@@ -30,13 +30,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if (headerImage) {
             headerImage.addEventListener("click", () => {
-                window.location.href = "./index.html";
+                window.location.href = "index.html";
             });
         }
 
         if (headerTitle) {
             headerTitle.addEventListener("click", () => {
-                window.location.href = "./index.html";
+                window.location.href = "index.html";
             });
         }
 
