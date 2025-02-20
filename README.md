@@ -1,4 +1,4 @@
-# [Portfolio](https://elisacarrascolanusse.github.io/portfolio/)
+# [Portfolio](https://elisacarrascolanusse.github.io/Portfolio/)
 
 Hi, I'm Elisa!
 
@@ -23,15 +23,40 @@ Currently working on separating the header and footer into components for ease o
 - [ ] Add functionality to contact form
 
 ## Project Structure
-
-    index.html: Home page.
-    about.html: About Me page.
-    contact.html: Contact form.
-    play.html: Non-work projects.
-    work.html: Work projects.
-
-    script.js: Handles the UI and fetch requests.
-    about.js: About UI and fetch requests.
-    work.js: Work UI and fetch requests.
-
-    style.css: Style sheet.
+`
+.
+├── README.md
+├── about.html
+├── assets
+│   ├── fonts
+│   ├── icons
+│   │   ├── github-img.png
+│   │   ├── instagram-img.png
+│   │   └── linkedin-img.png
+│   └── images
+│       ├── header-img.jpeg
+│       ├── iistl-img.png
+│       ├── intro-about-img.JPG
+│       ├── intro-image.jpeg
+│       ├── labor-trafficking.png
+│       ├── laboratoria-cover.PNG
+│       ├── memory-matters-img.png
+│       ├── memory-matters.png
+│       ├── procase-img.png
+│       └── theology.png
+├── components
+│   ├── contact.html
+│   ├── footer.html
+│   └── header.html
+├── index.html
+├── play.html
+├── projects
+│   ├── play
+│   └── work
+│       └── laboratoria.html
+├── scripts
+│   ├── about.js
+│   └── main.js
+├── styles
+│   └── style.css
+└── work.html`
