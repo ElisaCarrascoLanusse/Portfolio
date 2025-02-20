@@ -1,5 +1,4 @@
-import React from 'react';
-
+// Description: Main script for the website. This script loads the header and footer components, and attaches event listeners to the navigation buttons.
 document.addEventListener("DOMContentLoaded", function () {
     // Function to load an HTML component into a specified element
     function loadComponent(elementId, filePath, callback) {
