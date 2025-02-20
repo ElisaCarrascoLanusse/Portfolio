@@ -23,39 +23,39 @@ Currently working on separating the header and footer into components for ease o
 - [ ] Add functionality to contact form
 
 ## Project Structure
-    .
+.
 ├── README.md
 ├── about.html
 ├── assets
-│   ├── fonts
-│   ├── icons
-│   │   ├── github-img.png
-│   │   ├── instagram-img.png
-│   │   └── linkedin-img.png
-│   └── images
-│       ├── header-img.jpeg
-│       ├── iistl-img.png
-│       ├── intro-about-img.JPG
-│       ├── intro-image.jpeg
-│       ├── labor-trafficking.png
-│       ├── laboratoria-cover.PNG
-│       ├── memory-matters-img.png
-│       ├── memory-matters.png
-│       ├── procase-img.png
-│       └── theology.png
+│   ├── fonts
+│   ├── icons
+│   │   ├── github-img.png
+│   │   ├── instagram-img.png
+│   │   └── linkedin-img.png
+│   └── images
+│       ├── header-img.jpeg
+│       ├── iistl-img.png
+│       ├── intro-about-img.JPG
+│       ├── intro-image.jpeg
+│       ├── labor-trafficking.png
+│       ├── laboratoria-cover.PNG
+│       ├── memory-matters-img.png
+│       ├── memory-matters.png
+│       ├── procase-img.png
+│       └── theology.png
 ├── components
-│   ├── contact.html
-│   ├── footer.html
-│   └── header.html
+│   ├── contact.html
+│   ├── footer.html
+│   └── header.html
 ├── index.html
 ├── play.html
 ├── projects
-│   ├── play
-│   └── work
-│       └── laboratoria.html
+│   ├── play
+│   └── work
+│       └── laboratoria.html
 ├── scripts
-│   ├── about.js
-│   └── main.js
+│   ├── about.js
+│   └── main.js
 ├── styles
-│   └── style.css
+│   └── style.css
 └── work.html
