@@ -1,3 +1,5 @@
+import React from 'react';
+
 document.addEventListener("DOMContentLoaded", function () {
     // Function to load an HTML component into a specified element
     function loadComponent(elementId, filePath, callback) {
