@@ -1,92 +1,62 @@
-// Description: Main script for the website. This script loads the header and footer components, and attaches event listeners to the navigation buttons.
-document.addEventListener("DOMContentLoaded", function () {
-    // Function to load an HTML component into a specified element
-    function loadComponent(elementId, filePath, callback) {
+// Description: Main script for the website. This script loads the header, contact form, and footer components, and attaches event listeners to navigation buttons.
+
+document.addEventListener("DOMContentLoaded", () => {
+    // Utility function to load components dynamically
+    const loadComponent = (elementId, filePath, callback) => {
         fetch(filePath)
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error(`Could not fetch ${filePath}: ${response.statusText}`);
-                }
-                return response.text();
-            })
+            .then(response => response.ok ? response.text() : Promise.reject(`Could not fetch ${filePath}: ${response.statusText}`))
             .then(data => {
                 document.getElementById(elementId).innerHTML = data;
-                if (callback) callback(); // Ensure event listeners are set after the component is loaded
+                callback?.(); // Invoke callback if provided
             })
-            .catch(error => {
-                console.error('Error loading component:', error);
-            });
-    }
+            .catch(error => console.error('Error loading component:', error));
+    };
 
-    // Load header and footer, then attach event listeners
+    // Function to add click event listeners
+    const addClickEvent = (selector, callback) => {
+        document.querySelector(selector)?.addEventListener("click", callback);
+    };
+
+    // Load components
     loadComponent('header', 'components/header.html', attachHeaderEvents);
     loadComponent('footer', 'components/footer.html');
-    // Load contact form and attach events after it is loaded
-    loadComponent('contact-form', 'components/contact.html', attachContactFormEvents);
+    loadComponent('contact-form-cont', 'components/contact.html', attachContactFormEvents);
 
     function attachHeaderEvents() {
-        // Select the header image and title
-        const headerImage = document.querySelector("#header-img");
-        const headerTitle = document.querySelector("#header-h1");
-
-        if (headerImage) {
-            headerImage.addEventListener("click", () => {
-                window.location.href = "index.html";
-            });
-        }
-
-        if (headerTitle) {
-            headerTitle.addEventListener("click", () => {
-                window.location.href = "index.html";
-            });
-        }
-
-        // Attach event listeners for navigation buttons
+        addClickEvent("#header-img", () => window.location.href = "index.html");
+        addClickEvent("#header-h1", () => window.location.href = "index.html");
         attachNavigationEvents();
     }
 
     function attachNavigationEvents() {
-        const pages = [
-            { id: "#work", url: "work.html" },
-            { id: "#play", url: "play.html" },
-            { id: "#about", url: "about.html" },
-            { id: "#learn-more-btn", url: "about.html" }
-        ];
-
-        pages.forEach(page => {
-            const button = document.querySelector(page.id);
-            if (button) {
-                button.addEventListener("click", () => {
-                    window.location.href = page.url;
-                });
-            }
-        });
+        [
+            { selector: "#work", url: "work.html" },
+            { selector: "#play", url: "play.html" },
+            { selector: "#about", url: "about.html" }
+        ].forEach(({ selector, url }) => addClickEvent(selector, () => window.location.href = url));
     }
 
     function attachContactFormEvents() {
-        // Ensure the elements are available after the contact form is loaded
-        const contactSectionLink = document.querySelector(`a[href='#contact-section']`);
         const contactFormContainer = document.getElementById("contact-form-container");
-        const closeButton = document.getElementById("close-btn");
+        if (!contactFormContainer) return;
 
-        if (contactSectionLink && contactFormContainer && closeButton) {
-            // Show the contact form when the link is clicked
-            contactSectionLink.addEventListener("click", (event) => {
-                event.preventDefault();  // Prevent default anchor link behavior
-                contactFormContainer.classList.remove("hidden"); // Show the contact form
-            });
+        const toggleFormVisibility = (show) => contactFormContainer.classList.toggle("hidden", !show);
 
-            // Hide the contact form when the close button is clicked
-            closeButton.addEventListener("click", () => {
-                contactFormContainer.classList.add("hidden");
-            });
+        addClickEvent(`a[href='#contact-section']`, (event) => {
+            event.preventDefault();
+            toggleFormVisibility(true);
+        });
 
-            // Close the contact form when clicking outside the form container
-            contactFormContainer.addEventListener("click", (event) => {
-                if (event.target === contactFormContainer) {
-                    contactFormContainer.classList.add("hidden");
-                }
-            });
-        }
+        addClickEvent("#close-btn", () => toggleFormVisibility(false));
+
+        contactFormContainer.addEventListener("click", (event) => {
+            if (event.target === contactFormContainer) toggleFormVisibility(false);
+        });
+
+        document.addEventListener("keydown", (event) => {
+            if (event.key !== "Escape") return;
+            toggleFormVisibility(false);
+        });
     }
 });
+
