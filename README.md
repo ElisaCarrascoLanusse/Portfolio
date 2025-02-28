@@ -23,7 +23,7 @@ Currently working on separating the header and footer into components for ease o
 - [ ] Add functionality to contact form
 
 ## Project Structure
-
+```
 .
 ├── README.md
 ├── about.html
@@ -60,3 +60,4 @@ Currently working on separating the header and footer into components for ease o
 ├── styles
 │ └── style.css
 └── work.html
+```
