@@ -18,21 +18,21 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     // Load components
-    loadComponent('header', 'components/header.html', attachHeaderEvents);
-    loadComponent('footer', 'components/footer.html');
-    loadComponent('contact-form-cont', 'components/contact.html', attachContactFormEvents);
+    loadComponent('header', '/components/header.html', attachHeaderEvents);
+    loadComponent('footer', '/components/footer.html');
+    loadComponent('contact-form-cont', '/components/contact.html', attachContactFormEvents);
 
     function attachHeaderEvents() {
-        addClickEvent("#header-img", () => window.location.href = "index.html");
-        addClickEvent("#header-h1", () => window.location.href = "index.html");
+        addClickEvent("#header-img", () => window.location.href = "/index.html");
+        addClickEvent("#header-h1", () => window.location.href = "/index.html");
         attachNavigationEvents();
     }
 
     function attachNavigationEvents() {
         [
-            { selector: "#work", url: "work.html" },
-            { selector: "#play", url: "play.html" },
-            { selector: "#about", url: "about.html" }
+            { selector: "#work", url: "/work.html" },
+            { selector: "#play", url: "/play.html" },
+            { selector: "#about", url: "/about.html" }
         ].forEach(({ selector, url }) => addClickEvent(selector, () => window.location.href = url));
     }
 

@@ -1,0 +1,49 @@
+.projects-main {
+    width: 100%;
+    display: flex  ;
+    flex-direction: column;
+    margin: auto;
+}
+
+h1 {
+    font-size: xx-large;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.overview {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    width: 80%;
+}
+
+.overview-text {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.overview-text h1 {
+    margin: 1rem 0;
+}
+
+#laboratoria-list {
+    margin: 1rem 0;
+    align-self: center;
+}
+
+.statement {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.statement #laboratoria-background {
+    background-color: #FFE421 !important;
+    padding: 2rem 0 !important;
+    position: relative; /* Keeps it aligned properly */
+}
