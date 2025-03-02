@@ -5,11 +5,12 @@
     margin: auto;
 }
 
-h1 {
+/* h1 { 
     font-size: xx-large;
     font-weight: bold;
     text-decoration: underline;
 }
+*/
 
 .overview {
     display: flex;
