@@ -18,9 +18,9 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     // Load components
-    loadComponent('header', 'github.io/Portfolio/components/header.html', attachHeaderEvents);
-    loadComponent('footer', 'github.io/Portfolio/components/footer.html');
-    loadComponent('contact-form-cont', 'github.io/Portfolio/components/contact.html', attachContactFormEvents);
+    loadComponent('header', '<ElisaCarrascoLanusse>/github.io/Portfolio/components/header.html', attachHeaderEvents);
+    loadComponent('footer', '<ElisaCarrascoLanusse>/github.io/Portfolio/components/footer.html');
+    loadComponent('contact-form-cont', '<ElisaCarrascoLanusse>/github.io/Portfolio/components/contact.html', attachContactFormEvents);
 
     function attachHeaderEvents() {
         addClickEvent("#header-img", () => window.location.href = "/index.html");
@@ -30,9 +30,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function attachNavigationEvents() {
         [
-            { selector: "#work", url: "/work.html" },
-            { selector: "#play", url: "/play.html" },
-            { selector: "#about", url: "/about.html" }
+            { selector: "#work", url: "work.html" },
+            { selector: "#play", url: "play.html" },
+            { selector: "#about", url: "about.html" }
         ].forEach(({ selector, url }) => addClickEvent(selector, () => window.location.href = url));
     }
 
