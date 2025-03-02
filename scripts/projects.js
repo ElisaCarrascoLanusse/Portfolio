@@ -30,9 +30,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function attachNavigationEvents() {
         [
-            { selector: "#work", url: "./work.html" },
-            { selector: "#play", url: "./play.html" },
-            { selector: "#about", url: "./about.html" }
+            { selector: "#work", url: "./../../work.html" },
+            { selector: "#play", url: "./../../play.html" },
+            { selector: "#about", url: "./../../about.html" }
         ].forEach(({ selector, url }) => addClickEvent(selector, () => window.location.href = url));
     }
 
