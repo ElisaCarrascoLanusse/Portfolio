@@ -54,19 +54,25 @@ header {
     align-items: center;
     z-index: 1000;
 }
+
+/* Header content (logo and name) */
 .header-content {
     display: flex;
-    flex-direction: row;
     align-items: center;
+    justify-content: flex-start;  /* Ensures items are aligned to the left */
 }
+
+/* Header image (profile picture) */
 #header-img {
     border-radius: 20%;
     width: 60px;
     height: 60px;
-    margin: 0 2rem;
+    margin: 0 1rem;  /* Adjusted margin */
     opacity: 100%;
     cursor: pointer;
 }
+
+/* Header h1 */
 header h1 {
     font-size: larger;
     margin: 0;
@@ -74,13 +80,21 @@ header h1 {
     padding: 0 2rem;
 }
 
+/* Navbar styles */
+nav#menu {
+    display: flex;
+    justify-content: flex-end;  /* Align menu items to the right */
+    width: 50%;  /* Limit the width of the navigation */
+}
+
 nav#menu ul {
     display: flex;
     list-style: none;
+    padding: 0;
 }
 
 nav#menu li {
-    margin: 0 3rem;
+    margin: 0 2rem;  /* Adjust margin for consistent spacing */
     font-weight: bold;
 }
 
