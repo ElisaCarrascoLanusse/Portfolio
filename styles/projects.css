@@ -72,3 +72,30 @@ h1 {
     font-weight: bold;
     margin-bottom: 1rem;
 }
+
+.design {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem auto;
+    padding: 2rem 1rem;
+    width: 80%;
+}
+
+.design h1 {
+    margin-bottom: 1rem;
+}
+
+.design-process {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.design-process img {
+    height: auto;
+    margin: 1rem auto;
+    width: 60%;
+}
