@@ -32,9 +32,19 @@ h1 {
     margin: 1rem 0;
 }
 
-#laboratoria-list {
+.overview-text p {
+    font-size: large;
+}
+
+#laboratoria-list{
     margin: 1rem 0;
     align-self: center;
+    font-weight: bold;
+    font-size: medium;
+}
+
+#laboratoria-list li {
+    font-size: larger;
 }
 
 .statement {
@@ -46,4 +56,19 @@ h1 {
     background-color: #FFE421 !important;
     padding: 2rem 0 !important;
     position: relative; /* Keeps it aligned properly */
+}
+
+#statement-text {
+    width: 75%;
+    margin: auto auto;
+    color: #242424;
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    margin: 2rem auto;
+}
+
+#statement-text h1 {
+    font-weight: bold;
+    margin-bottom: 1rem;
 }
