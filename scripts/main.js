@@ -1,4 +1,4 @@
-// Description: Main script for the website. This script loads the header, contact form, and footer components, and attaches event listeners to navigation buttons.
+// Description: Main script for the website. This script loads the header, contact form, and footer components, and attaches event listeners to navigation buttons!
 
 document.addEventListener("DOMContentLoaded", () => {
     // Utility function to load components dynamically
