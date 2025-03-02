@@ -1,6 +1,10 @@
-// Description: Main script for the website. This script loads the header, contact form, and footer components, and attaches event listeners to navigation buttons!
-
 document.addEventListener("DOMContentLoaded", () => {
+    // Determine base path dynamically
+    const basePath = (() => {
+        const depth = window.location.pathname.split('/').length - 2; // Subtract 2 to adjust for leading slash
+        return depth > 0 ? "../".repeat(depth) : "./";
+    })();
+
     // Utility function to load components dynamically
     const loadComponent = (elementId, filePath, callback) => {
         fetch(filePath)
@@ -17,14 +21,14 @@ document.addEventListener("DOMContentLoaded", () => {
         document.querySelector(selector)?.addEventListener("click", callback);
     };
 
-    // Load components
-    loadComponent('header', 'components/header.html', attachHeaderEvents);
-    loadComponent('footer', 'components/footer.html');
-    loadComponent('contact-form-cont', 'components/contact.html', attachContactFormEvents);
+    // Load components with dynamic base path
+    loadComponent('header', `${basePath}components/header.html`, attachHeaderEvents);
+    loadComponent('footer', `${basePath}components/footer.html`);
+    loadComponent('contact-form-cont', `${basePath}components/contact.html`, attachContactFormEvents);
 
     function attachHeaderEvents() {
-        addClickEvent("#header-img", () => window.location.href = "index.html");
-        addClickEvent("#header-h1", () => window.location.href = "index.html");
+        addClickEvent("#header-img", () => window.location.href = `${basePath}index.html`);
+        addClickEvent("#header-h1", () => window.location.href = `${basePath}index.html`);
         attachNavigationEvents();
     }
 
@@ -33,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
             { selector: "#work", url: "work.html" },
             { selector: "#play", url: "play.html" },
             { selector: "#about", url: "about.html" }
-        ].forEach(({ selector, url }) => addClickEvent(selector, () => window.location.href = url));
+        ].forEach(({ selector, url }) => addClickEvent(selector, () => window.location.href = `${basePath}${url}`));
     }
 
     function attachContactFormEvents() {
@@ -59,4 +63,3 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 });
-
