@@ -5,14 +5,14 @@ document.addEventListener("DOMContentLoaded", () => {
     if (learnMoreButton) {
         learnMoreButton.addEventListener("click", () => {
             event.preventDefault();
-            window.location.href = "/about.html";
+            window.location.href = "about.html";
         });
     }
 
     const projects = [
-        { id: "laboratoria-btn", url: "/projects/work/laboratoria.html"},
-        { id: "memory-btn", url: "/projects/work/memory.html"},
-        { id: "atip-btn", url: "/projects/work/atip.html"}
+        { id: "laboratoria-btn", url: "projects/work/laboratoria.html"},
+        { id: "memory-btn", url: "projects/work/memory.html"},
+        { id: "atip-btn", url: "projects/work/atip.html"}
     ];
 
     const viewProjectButtons = document.querySelectorAll(".button");

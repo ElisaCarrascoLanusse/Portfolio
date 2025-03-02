@@ -18,13 +18,13 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     // Load components
-    loadComponent('header', '<ElisaCarrascoLanusse>/github.io/Portfolio/components/header.html', attachHeaderEvents);
-    loadComponent('footer', '<ElisaCarrascoLanusse>/github.io/Portfolio/components/footer.html');
-    loadComponent('contact-form-cont', '<ElisaCarrascoLanusse>/github.io/Portfolio/components/contact.html', attachContactFormEvents);
+    loadComponent('header', 'components/header.html', attachHeaderEvents);
+    loadComponent('footer', 'components/footer.html');
+    loadComponent('contact-form-cont', 'components/contact.html', attachContactFormEvents);
 
     function attachHeaderEvents() {
-        addClickEvent("#header-img", () => window.location.href = "/index.html");
-        addClickEvent("#header-h1", () => window.location.href = "/index.html");
+        addClickEvent("#header-img", () => window.location.href = "index.html");
+        addClickEvent("#header-h1", () => window.location.href = "index.html");
         attachNavigationEvents();
     }
 
