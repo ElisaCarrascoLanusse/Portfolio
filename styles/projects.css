@@ -31,6 +31,9 @@
 
 .overview-text h1 {
     margin: 1rem 0;
+    font-size: xx-large;
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 .overview-text p {

@@ -23,8 +23,8 @@ document.addEventListener("DOMContentLoaded", () => {
     loadComponent('contact-form-cont', './../../components/contact.html', attachContactFormEvents);
 
     function attachHeaderEvents() {
-        addClickEvent("#header-img", () => window.location.href = "./index.html");
-        addClickEvent("#header-h1", () => window.location.href = "./index.html");
+        addClickEvent("#header-img", () => window.location.href = "./../../index.html");
+        addClickEvent("#header-h1", () => window.location.href = "./../../index.html");
         attachNavigationEvents();
     }
 
