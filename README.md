@@ -28,36 +28,46 @@ Currently working on separating the header and footer into components for ease o
 ├── README.md
 ├── about.html
 ├── assets
-│ ├── fonts
-│ ├── icons
-│ │ ├── github-img.png
-│ │ ├── instagram-img.png
-│ │ └── linkedin-img.png
-│ └── images
-│ ├── header-img.jpeg
-│ ├── iistl-img.png
-│ ├── intro-about-img.JPG
-│ ├── intro-image.jpeg
-│ ├── labor-trafficking.png
-│ ├── laboratoria-cover.PNG
-│ ├── memory-matters-img.png
-│ ├── memory-matters.png
-│ ├── procase-img.png
-│ └── theology.png
+│   ├── fonts
+│   ├── icons
+│   │   ├── github-img.png
+│   │   ├── instagram-img.png
+│   │   └── linkedin-img.png
+│   └── images
+│       ├── design-process.png
+│       ├── header-img.jpeg
+│       ├── iistl-img.png
+│       ├── intro-about-img.JPG
+│       ├── intro-image.jpeg
+│       ├── labor-trafficking.png
+│       ├── laboratoria-cover.PNG
+│       ├── memory-matters-img.png
+│       ├── memory-matters.png
+│       ├── newsletter.PNG
+│       ├── procase-img.png
+│       └── theology.png
 ├── components
-│ ├── contact.html
-│ ├── footer.html
-│ └── header.html
+│   ├── contact.html
+│   ├── footer.html
+│   └── header.html
 ├── index.html
 ├── play.html
 ├── projects
-│ ├── play
-│ └── work
-│ └── laboratoria.html
+│   ├── play
+│   │   └── theology.html
+│   └── work
+│       ├── atip.html
+│       ├── laboratoria.html
+│       └── memory.html
 ├── scripts
-│ ├── about.js
-│ └── main.js
+│   ├── about.js
+│   ├── home.js
+│   ├── main.js
+│   ├── projects.js
+│   └── workplay.js
 ├── styles
-│ └── style.css
+│   ├── projects.css
+│   └── style.css
 └── work.html
+
 ```
