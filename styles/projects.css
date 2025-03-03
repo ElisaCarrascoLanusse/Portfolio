@@ -56,27 +56,46 @@
     margin: 0 !important;
 }
 
-.statement #laboratoria-background {
+#laboratoria-background {
     background-color: #FFE421 !important;
+    color: #242424;
     padding: 2rem 0 !important;
-    position: relative; /* Keeps it aligned properly */
+    position: relative; 
 }
 
-#statement-text {
-    width: 75%;
+.problem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem auto;
+    padding: 2rem 0;
+    
+}
+
+.problem-text {
     margin: auto auto;
-    color: #242424;
     text-align: center;
     font-size: large;
     font-weight: bold;
     margin: 2rem auto;
+    width: 75%;
 }
 
-#statement-text h1 {
+.problem-text h1 {
     font-weight: bold;
     margin-bottom: 1rem;
     font-size: xx-large;
     text-decoration: underline;
+}
+
+.problem-text p {
+    margin-bottom: 1rem;
+}
+
+.problem-text li {
+    margin-top: 1rem;
+    text-align: center;
+    list-style-position: inside;
 }
 
 .design {
@@ -100,11 +119,40 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin: 0 auto;
 }
 
 .design-process img {
     height: auto;
-    margin: 1rem auto;
+    margin-top: 1rem;
     width: 60%;
 }
+
+.research {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem auto;
+    padding: 2rem 0;
+    
+}
+
+.research-text {
+    margin: auto auto;
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    margin: 2rem auto;
+    width: 80%;
+}
+
+.research-text h1 {
+    font-weight: bold;
+    margin-bottom: 1rem;
+    font-size: xx-large;
+    text-decoration: underline;
+}
+
+.research-text p {
+    margin-bottom: 1rem;
+}
+
