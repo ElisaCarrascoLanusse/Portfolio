@@ -75,6 +75,8 @@
 #statement-text h1 {
     font-weight: bold;
     margin-bottom: 1rem;
+    font-size: xx-large;
+    text-decoration: underline;
 }
 
 .design {
@@ -88,6 +90,9 @@
 
 .design h1 {
     margin-bottom: 1rem;
+    font-size: xx-large;
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 .design-process {
