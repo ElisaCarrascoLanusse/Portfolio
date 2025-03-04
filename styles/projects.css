@@ -1,3 +1,4 @@
+/* MAIN */
 .projects-main {
     width: 100%;
     display: flex  ;
@@ -12,6 +13,7 @@
 }
 */
 
+/* OVERVIEW */
 .overview {
     display: flex;
     flex-direction: row;
@@ -51,6 +53,7 @@
     font-size: larger;
 }
 
+/* PROBLEM STATEMENT */
 .statement {
     padding: 0 !important;
     margin: 0 !important;
@@ -63,7 +66,8 @@
     position: relative; 
 }
 
-.problem {
+/* EXPLORATION */
+.exploration {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -72,7 +76,7 @@
     
 }
 
-.problem-text {
+.exploration-text {
     margin: auto auto;
     text-align: center;
     font-size: large;
@@ -81,29 +85,29 @@
     width: 75%;
 }
 
-.problem-text h1 {
+.exploration-text h1 {
     font-weight: bold;
     margin-bottom: 1rem;
     font-size: xx-large;
     text-decoration: underline;
 }
 
-.problem-text p {
+.exploration-text p {
     margin-bottom: 1rem;
 }
 
-.problem-text li {
+.exploration-text li {
     margin-top: 1rem;
     text-align: center;
     list-style-position: inside;
 }
 
+/* DESIGN */
 .design {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 1rem auto;
-    padding: 2rem 1rem;
     width: 80%;
 }
 
@@ -127,6 +131,7 @@
     width: 60%;
 }
 
+/* RESEARCH */
 .research {
     display: flex;
     flex-direction: column;
@@ -138,7 +143,7 @@
 
 .research-text {
     margin: auto auto;
-    text-align: center;
+    text-align: right;
     font-size: large;
     font-weight: bold;
     margin: 2rem auto;
@@ -152,7 +157,22 @@
     text-decoration: underline;
 }
 
-.research-text p {
+#research-pt1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     margin-bottom: 1rem;
 }
 
+.research-text p {
+    margin-bottom: 2rem;
+    width: 45%;
+}
+
+.research-text li {
+    margin-top: 1rem;
+    margin-left: 2rem;
+    text-align: left;
+    list-style: none;
+}
