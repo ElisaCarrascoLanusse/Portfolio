@@ -13,6 +13,104 @@
 }
 */
 
+/* USER PERSONAS STYLES */
+.personas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.persona-card {
+    border-radius: 2rem;
+    display: flex; /* Ensures children align horizontally */
+    overflow: hidden; /* Clips content to rounded corners */
+    width: 100%;
+    justify-items: center;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.361);
+}
+
+.persona-name {
+    width: 5%; 
+    background-color: #FFE421; /* Yellow background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    writing-mode: vertical-rl; 
+    text-orientation: upright; 
+    font-size: x-large;
+    font-weight: bold;
+    border-top-left-radius: 2rem; 
+    border-bottom-left-radius: 2rem;
+    padding: 1rem;
+}
+
+.persona-name h2 {
+    font-size: x-large;
+    font-weight: bold;
+    writing-mode: vertical-rl;
+    text-orientation: sideways-right;
+    transform: rotate(180deg);
+}
+
+.persona-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 2rem 2rem;
+    margin-right: 1rem;
+}
+
+.persona-bio {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.persona-personality {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 1rem auto;
+}
+
+.persona-needs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 1rem auto;
+    border: 0.3rem dashed #cd1c1c;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.persona-im {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 0.3rem dashed #1c48cd;
+    padding: 2rem;   
+}
+
+.persona-ge {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 0.3rem dashed #8023ae;
+    padding: 2rem;   
+}
+
+.persona-cn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 0.3rem dashed #3cae23;
+    padding: 2rem;   
+}
+
+
+
 /* OVERVIEW */
 .overview {
     display: flex;
@@ -167,7 +265,7 @@
 
 .research-text p {
     margin-bottom: 2rem;
-    width: 45%;
+    width: 30%;
 }
 
 .research-text li {
