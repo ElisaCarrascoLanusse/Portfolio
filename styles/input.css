@@ -1,1 +1,24 @@
 @import "tailwindcss";
+
+:root {
+    --text-size-sm: 0.875rem;  
+    --text-size-md: 1rem; 
+    --text-size-lg: 1.125rem;  
+}
+
+/* Apply Responsive Text Sizing */
+html {
+    font-size: var(--text-size-sm);
+}
+
+@media (min-width: 640px) { /* sm breakpoint */
+    html {
+        font-size: var(--text-size-md);
+    }
+}
+
+@media (min-width: 1024px) { /* lg breakpoint */
+    html {
+        font-size: var(--text-size-lg);
+    }
+}
