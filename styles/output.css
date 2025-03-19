@@ -257,15 +257,6 @@
   .top-5 {
     top: calc(var(--spacing) * 5);
   }
-  .top-10 {
-    top: calc(var(--spacing) * 10);
-  }
-  .top-15 {
-    top: calc(var(--spacing) * 15);
-  }
-  .top-20 {
-    top: calc(var(--spacing) * 20);
-  }
   .right-0 {
     right: calc(var(--spacing) * 0);
   }
@@ -280,9 +271,6 @@
   }
   .isolation-auto {
     isolation: auto;
-  }
-  .z-\[1\] {
-    z-index: 1;
   }
   .z-\[10\] {
     z-index: 10;
@@ -2126,7 +2114,41 @@
     color: #FAFAFA;
   }
 }
-@layer components;
+@layer components {
+  .section-header {
+    display: flex;
+    align-items: center;
+    font-size: 1.875rem;
+    font-weight: bold;
+  }
+  .project-card {
+    position: sticky;
+    top: 1rem;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    background-color: #FAFAFA;
+    color: #262626;
+    border-radius: 1rem;
+    padding: 3.75rem;
+    margin: 1.25rem 0;
+    box-shadow: inset 0 0 0.5rem 0 rgb(0, 0, 0);
+    gap: 2rem;
+    .project-details {
+      display: flex;
+      flex-direction: column;
+    }
+    h2 {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    p {
+      margin-right: 2.5rem;
+      margin-top: 1.25rem;
+      margin-bottom: 1.25rem;
+    }
+  }
+}
 @property --tw-translate-x {
   syntax: "*";
   inherits: false;
