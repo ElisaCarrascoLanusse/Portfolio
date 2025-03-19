@@ -1,7 +1,7 @@
 {
   "files.associations": {
     "\"*.html\"": "\".html\"",
-    "\"*.css\"": "",
+    "\"*.css\"": "\"tailwindcss\"",
     "\"*.js\"": "\"javascript\""
   },
 
