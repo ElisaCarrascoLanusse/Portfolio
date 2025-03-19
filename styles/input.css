@@ -7,9 +7,6 @@
 }
 
 /* Apply Responsive Text Sizing */
-html {
-    font-size: var(--text-size-sm);
-}
 
 @media (min-width: 640px) { /* sm breakpoint */
     html {
@@ -21,4 +18,52 @@ html {
     html {
         font-size: var(--text-size-lg);
     }
+}
+
+@layer base {
+    html {
+        scroll-behavior: smooth;
+        font-size: var(--text-size-sm);
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font: bold;
+    }
+
+    body {
+        background-color: #404040;
+        color: #FAFAFAFA;
+        gap: 2rem;
+    }
+
+    main {
+        margin: 2.5rem 6.25rem;
+    }
+    
+    .btn {
+        background-color: #FAFAFA;
+        color: #262626;
+        cursor: pointer;
+        font-weight: 800;
+        padding: 1rem 1.5rem;
+    }
+    .btn:hover {
+        background-color: #00A63E;
+        color: #FAFAFA;
+    }
+
+    .btn-dark {
+        background-color: #262626;
+        color: #FAFAFA;
+        cursor: pointer;
+        font-weight: 800;
+        padding: 1rem 1.5rem;
+    }
+    .btn-dark:hover {
+        background-color: #00A63E;
+        color: #FAFAFA;
+    }
+}
+
+@layer components {
 }

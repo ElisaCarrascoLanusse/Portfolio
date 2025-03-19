@@ -1,35 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elisa Carrasco Lanusse Portfolio</title>
-    <link rel="stylesheet" href="../styles/output.css">
-</head>
-<body class="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100"> 
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Elisa Carrasco Lanusse Portfolio</title>
+        <link rel="stylesheet" href="../styles/output.css">
+    </head>
+    <body> 
+            
+        <!-- Contact Form -->
+        <div id="contact-form-container" class="backdrop-blur-xs p-auto fixed top-0 left-0 w-full h-full z-[10] flex justify-center items-center invisible">
+            <div class="relative shadow-2xl bg-neutral-900 text-neutral-50 w-2/3 h-4/5 p-15 rounded-2xl flex flex-col" id="contact-form">
+                <span class="absolute top-5 right-10 text-2xl hover:text-red-500 hover:cursor-pointer" id="close-btn">&times;</span>
+                <h2 class="relative text-3xl font-bold text-center">Contact Me</h2>
+                <p class="relative text-center m-2 text-sm">Feel free to reach out to me for any inquiries or collaborations! I'm always looking for new projects and hobbies to work on, so don't hesitate to send me a message. I'm also available for any questions or comments you may have about my work or my portfolio. I look forward to hearing from you!</p>
+                <form class="flex flex-col justify-center items-center" id="contactForm">
+                    <div class="flex flex-row my-2 justify-center items-center">
+                    <input class="bg-neutral-50 mx-2 text-neutral-800 p-2 rounded-lg w-2/5" type="text" id="name" name="name" placeholder="Name" required>
 
-    <!-- Contact Button -->
-    <div class="flex justify-center mt-10">
-        <button id="open-contact-form" class="px-6 py-3 bg-green-600 text-white rounded-lg font-bold text-lg hover:bg-green-700">
-            Contact Me
-        </button>
-    </div>
+                    <input class="bg-neutral-50 mx-2  text-neutral-800 p-2 rounded-lg w-3/5" type="email" id="email" name="email" placeholder="Email" required>
+                    </div>
 
-    <!-- Contact Form (Hidden by Default) -->
-    <div id="contact-form-container" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50">
-        <div id="contact-form" class="bg-gray-100 dark:bg-gray-800 p-6 md:p-8 rounded-2xl shadow-lg w-full max-w-md relative">
-            <span id="close-btn" class="absolute top-4 right-4 text-2xl cursor-pointer hover:text-red-600">&times;</span>
-            <h2 class="text-center text-2xl font-semibold mb-4">Contact Me</h2>
-            <p class="text-center text-base mb-4">Feel free to reach out for any inquiries or collaborations!</p>
-            <form id="contactForm" class="flex flex-col space-y-3">
-                <input type="text" id="name" name="name" placeholder="Name" required class="w-full p-3 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 focus:ring-2 focus:ring-green-500">
-                <input type="email" id="email" name="email" placeholder="Email" required class="w-full p-3 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 focus:ring-2 focus:ring-green-500">
-                <textarea id="message" name="message" placeholder="Message" required class="w-full p-3 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 focus:ring-2 focus:ring-green-500"></textarea>
-                <button type="submit" id="submit-contact-form" class="w-full p-3 bg-green-600 text-white rounded-lg font-bold text-lg transition hover:bg-green-700">Send</button>
-            </form>
+                    <textarea class="resize-none bg-neutral-50 text-neutral-800 p-2 rounded-lg w-7/8 h-35" id="message" name="message" placeholder="Message" required></textarea>
+
+                    <button class="button bg-neutral-50 text-neutral-600 font-extrabold text-m rounded-2xl p-4 max-w-40 w-3xs hover:bg-green-600 m-2 hover:text-neutral-50 cursor-pointer" type="submit" id="submit-contact-form">Send</button>
+                </form>
+            </div>
         </div>
-    </div>
 
-    <script src="../scripts/main.js"></script>
-</body>
+        <script src="../scripts/main.js"></script>
+
+    </body>
 </html>

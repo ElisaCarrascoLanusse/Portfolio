@@ -4,24 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Elisa Carrasco Lanusse Portfolio</title>
-    <link rel="stylesheet" href="styles/style.css">  
+    <link rel="stylesheet" href="styles/output.css">  
 </head>
 
-    <body id="work-body">
+    <body class="body" id="work-body">
 
     <div id="header"></div>
 
-    <main>
+    <main class="mx-25 my-10">
         <!-- Introduction -->
-        <section class="work-introduction">
-            <h1>WORK</h1>
+        <section class="work-introduction flex flex-col my-10 items-center gap-8">
+            <h1 class="text-5xl font-bold text-center">WORK</h1>
         </section>
 
-        <section class="work-projects">
+        <section class="work-projects flex flex-col">
 
-            <div class="work-project" id="atip-project">
-                <div class="overlay" id="atip-overlay">
-                    <div class="work-project-details">
+            <div class="work-project flex flex-row rounded-2xl p-15 text-neutral-800 inset-shadow-neutral-400 relative h-full bg-[url(https://github.com/ElisaCarrascoLanusse/Portfolio/blob/main/assets/images/labor-trafficking.png?raw=true)]" id="atip-project">
+                <div class="overlay absolute flex flex-row bg-neutral-800/90 top-0 right-0 w-1/2 h-fit overflow-auto ml-auto p-8 rounded-r-2xl items-center" id="atip-overlay">
+                    <div class="work-project-details flex flex-col text-neutral-50">
                         <h2>Labor Violations: Anti-Trafficking In Persons In Eastern Missouri</h2> 
                         <p>As an intern with the International Institute of St. Louis' ATIP team, I researched labor violations in Eastern Missouri, analyzed data to identify patterns, and created infographics and reports to support stakeholder engagement and client resources.</p>
                         <ul id="atip-list">
@@ -33,8 +33,9 @@
                     </div>
                 </div>
             </div>
+            
 
-            <div class="work-project" id="memory-project">
+            <div class="work-project flex flex-row bg-neutral-50 rounded-2xl p-15 text-neutral-800 my-10 inset-shadow-sm inset-shadow-neutral-400" id="memory-project">
                 <div class="overlay" id="memory-overlay">
                     <div class="work-project-details">
                         <h2>Memory Matters: Comparative Analysis of Memorialization</h2> 
@@ -44,12 +45,12 @@
                             <li>Tools: Zotero and Canva
                             <li>Duration: 4 months</li>
                         </ul>
-                        <button class="button" id="memory-btn">Learn More</button>
+                        <button class="button " id="memory-btn">Learn More</button>
                     </div>
                 </div>
             </div>
 
-            <div class="work-project" id="laboratoria-project">
+            <div class="work-project work-project flex flex-row bg-neutral-50 rounded-2xl p-15 text-neutral-800 my-10 inset-shadow-sm inset-shadow-neutral-400" id="laboratoria-project">
                 <div class="overlay" id="laboratoria-overlay">
                     <div class="work-project-details">
                         <h2>Laboratoria: Unlocking Engagement</h2> 

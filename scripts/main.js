@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const contactFormContainer = document.getElementById("contact-form-container");
         if (!contactFormContainer) return;
 
-        const toggleFormVisibility = (show) => contactFormContainer.classList.toggle("hidden", !show);
+        const toggleFormVisibility = (show) => contactFormContainer.classList.toggle("invisible", !show);
 
         addClickEvent(`a[href='#contact-section']`, (event) => {
             event.preventDefault();
