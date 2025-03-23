@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
         { id: "atip-btn", url: "projects/work/atip.html"}
     ];
 
-    const viewProjectButtons = document.querySelectorAll(".button");
+    const viewProjectButtons = document.querySelectorAll(".btn-dark");
     viewProjectButtons.forEach(button => {
         button.addEventListener("click", () => {
             const project = projects.find(p => p.id === button.id);
