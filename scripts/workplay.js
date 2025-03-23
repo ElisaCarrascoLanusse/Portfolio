@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
         { id: "atip-btn", url: "projects/work/atip.html"}
     ];
 
-    const viewWorkButtons = document.querySelectorAll(".button");
+    const viewWorkButtons = document.querySelectorAll(".btn");
     viewWorkButtons.forEach(button => {
         button.addEventListener("click", () => {
             const project = workProjects.find(p => p.id === button.id);
@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
         { id: "theology-btn", url: "projects/play/theology.html"}
     ];
 
-    const viewPlayButtons = document.querySelectorAll(".button");
+    const viewPlayButtons = document.querySelectorAll(".btn");
     viewPlayButtons.forEach(button => {
         button.addEventListener("click", () => {
             const project = playProjects.find(p => p.id === button.id);
@@ -32,4 +32,3 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });    
 });
-
