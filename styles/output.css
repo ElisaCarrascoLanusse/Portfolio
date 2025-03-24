@@ -26,6 +26,7 @@
     --text-2xl--line-height: calc(2 / 1.5);
     --text-3xl: 1.875rem;
     --text-3xl--line-height: calc(2.25 / 1.875);
+    --font-weight-medium: 500;
     --font-weight-bold: 700;
     --font-weight-extrabold: 800;
     --radius-lg: 0.5rem;
@@ -385,6 +386,9 @@
   .mx-2 {
     margin-inline: calc(var(--spacing) * 2);
   }
+  .mx-5 {
+    margin-inline: calc(var(--spacing) * 5);
+  }
   .my-2 {
     margin-block: calc(var(--spacing) * 2);
   }
@@ -504,6 +508,9 @@
   }
   .h-35 {
     height: calc(var(--spacing) * 35);
+  }
+  .h-50 {
+    height: calc(var(--spacing) * 50);
   }
   .h-full {
     height: 100%;
@@ -1470,6 +1477,10 @@
   .font-extrabold {
     --tw-font-weight: var(--font-weight-extrabold);
     font-weight: var(--font-weight-extrabold);
+  }
+  .font-medium {
+    --tw-font-weight: var(--font-weight-medium);
+    font-weight: var(--font-weight-medium);
   }
   .text-balance {
     text-wrap: balance;
