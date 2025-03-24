@@ -1,0 +1,245 @@
+@import "tailwindcss";
+
+:root {
+    --text-size-sm: 0.875rem;  
+    --text-size-md: 1rem; 
+    --text-size-lg: 1.125rem;  
+}
+
+/* Apply Responsive Text Sizing */
+
+@media (min-width: 640px) { /* sm breakpoint */
+    html {
+        font-size: var(--text-size-md);
+    }
+}
+
+@media (min-width: 1024px) { /* lg breakpoint */
+    html {
+        font-size: var(--text-size-lg);
+    }
+}
+
+@layer base {
+    html {
+        scroll-behavior: smooth;
+        font-size: var(--text-size-sm);
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font: bold;
+    }
+
+    body {
+        background-color: #404040;
+        color: #FAFAFAFA;
+        gap: 2rem;
+    }
+
+    main {
+        margin: 2.5rem 6.25rem;
+    }
+    
+    .btn {
+        background-color: #FAFAFA;
+        color: #262626;
+        cursor: pointer;
+        font-weight: 800;
+        padding: 1rem 1.5rem;
+        border-radius: 1rem;
+    }
+    .btn:hover {
+        background-color: #00A63E;
+        color: #FAFAFA;
+    }
+
+    .btn-dark {
+        background-color: #262626;
+        color: #FAFAFA;
+        cursor: pointer;
+        font-weight: 800;
+        padding: 1rem 1.5rem;
+    }
+    .btn-dark:hover {
+        background-color: #00A63E;
+        color: #FAFAFA;
+    }
+}
+
+@layer components {
+    .page-title {
+        font-size: 3rem;
+        font-weight: 900;
+        text-align: center;
+    }
+    
+    .section-header {
+        display: flex;
+        align-items: center;
+        font-size: 1.875rem;
+        font-weight: bold;
+    }
+
+    .parallax-card {
+        position: sticky;
+        top: 1rem;
+        z-index: 1;
+        display: flex;
+        flex-direction: row;
+        background-color: #FAFAFA;
+        color: #262626;
+        border-radius: 1rem;
+        padding: 3.75rem;
+        margin: 1.25rem 0;
+        box-shadow: inset 0 0 0.5rem 0 rgb(0, 0, 0);
+        gap: 2rem;
+
+        .project-details {
+            display: flex;
+            flex-direction: column;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        p {
+            margin-right: 2.5rem;
+            margin-top: 1.25rem;
+            margin-bottom: 1.25rem;
+        }
+    }
+    
+    /* Work Card Component*/
+    .work-projects {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3rem;
+        justify-content: center; 
+    }
+    .work-card {
+        position: relative;
+        border-radius: 1rem;
+        overflow: hidden;
+        display: flex;
+        width: 100%;
+        height: 28rem;
+    }
+    .work-card img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 0;
+    }
+    .overlay {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.75); 
+        box-shadow: inset 0 0 1rem 0 rgb(0, 0, 0);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+        z-index: 1;
+    }
+    .work-details {
+        position: relative;
+        text-align: left;
+        color: white;
+        margin: 1rem;
+        z-index: 2;
+
+        h2 {
+            font-size: x-large;
+            font-weight: bold;
+        }
+
+        p {
+            font-size: medium;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+        ul {
+            list-style-type: disc;
+            margin: 1rem;
+            font-size: medium;
+        }
+        li {
+            margin: 0.5rem;
+        }
+    }   
+    
+    
+    /* Play Card Component*/
+    .play-projects {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3rem;
+        justify-content: center; 
+    }
+    .play-card {
+        position: relative;
+        border-radius: 1rem;
+        overflow: hidden;
+        display: flex;
+        width: 100%;
+        height: 28rem;
+    }
+    .play-card img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 70% 50%;
+        z-index: 0;
+    }
+    .overlay {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.75); 
+        box-shadow: inset 0 0 1rem 0 rgb(0, 0, 0);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+        z-index: 1;
+    }
+    .play-details {
+        position: relative;
+        text-align: left;
+        color: white;
+        margin: 1rem;
+        z-index: 2;
+
+        h2 {
+            font-size: x-large;
+            font-weight: bold;
+        }
+        p {
+            font-size: medium;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+        ol {
+            list-style-type: decimal;
+            margin: 1rem;
+            font-size: medium;
+        }
+        li {
+            margin: 0.5rem;
+        }
+    }  
+
+}
