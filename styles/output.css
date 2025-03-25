@@ -543,12 +543,6 @@
   .h-80 {
     height: calc(var(--spacing) * 80);
   }
-  .h-100 {
-    height: calc(var(--spacing) * 100);
-  }
-  .h-500 {
-    height: calc(var(--spacing) * 500);
-  }
   .h-full {
     height: 100%;
   }
@@ -576,12 +570,6 @@
   .w-2\/5 {
     width: calc(2/5 * 100%);
   }
-  .w-2\/7 {
-    width: calc(2/7 * 100%);
-  }
-  .w-3\/4 {
-    width: calc(3/4 * 100%);
-  }
   .w-3\/5 {
     width: calc(3/5 * 100%);
   }
@@ -591,17 +579,8 @@
   .w-4\/5 {
     width: calc(4/5 * 100%);
   }
-  .w-5\/6 {
-    width: calc(5/6 * 100%);
-  }
   .w-7\/8 {
     width: calc(7/8 * 100%);
-  }
-  .w-8\/9 {
-    width: calc(8/9 * 100%);
-  }
-  .w-9\/10 {
-    width: calc(9/10 * 100%);
   }
   .w-10\/11 {
     width: calc(10/11 * 100%);
@@ -609,20 +588,11 @@
   .w-11\/12 {
     width: calc(11/12 * 100%);
   }
-  .w-13\/14 {
-    width: calc(13/14 * 100%);
-  }
   .w-16 {
     width: calc(var(--spacing) * 16);
   }
-  .w-18\/19 {
-    width: calc(18/19 * 100%);
-  }
   .w-75 {
     width: calc(var(--spacing) * 75);
-  }
-  .w-100 {
-    width: calc(var(--spacing) * 100);
   }
   .w-full {
     width: 100%;
@@ -2167,11 +2137,11 @@
     font-size: var(--text-size-sm);
   }
   h1, h2, h3, h4, h5, h6 {
-    font: bold;
+    font-weight: bold;
   }
   body {
     background-color: #404040;
-    color: #FAFAFAFA;
+    color: #FAFAFA;
     gap: 2rem;
   }
   main {
@@ -2218,7 +2188,7 @@
     top: 1rem;
     z-index: 1;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     background-color: #FAFAFA;
     color: #262626;
     border-radius: 1rem;
@@ -2226,6 +2196,9 @@
     margin: 1.25rem 0;
     box-shadow: inset 0 0 0.5rem 0 rgb(0, 0, 0);
     gap: 2rem;
+    @media (min-width: 768px) {
+      flex-direction: row;
+    }
     .project-details {
       display: flex;
       flex-direction: column;
@@ -2235,26 +2208,29 @@
       font-weight: bold;
     }
     p {
-      margin-right: 2.5rem;
-      margin-top: 1.25rem;
-      margin-bottom: 1.25rem;
+      margin: 1.25rem 0;
     }
   }
-  .work-projects {
+  .work-projects, .play-projects {
     display: flex;
     flex-wrap: wrap;
     gap: 3rem;
     justify-content: center;
   }
-  .work-card {
+  .work-card, .play-card {
     position: relative;
     border-radius: 1rem;
     overflow: hidden;
     display: flex;
+    flex-direction: column;
     width: 100%;
-    height: 28rem;
+    height: auto;
+    @media (min-width: 768px) {
+      flex-direction: row;
+      height: 28rem;
+    }
   }
-  .work-card img {
+  .work-card img, .play-card img {
     position: absolute;
     top: 0;
     left: 0;
@@ -2267,8 +2243,8 @@
     position: absolute;
     top: 0;
     right: 0;
-    width: 50%;
-    height: 100%;
+    width: 100%;
+    height: 50%;
     background: rgba(0, 0, 0, 0.85);
     box-shadow: inset 0 0 1rem 0 rgb(0, 0, 0);
     display: flex;
@@ -2276,8 +2252,12 @@
     justify-content: center;
     padding: 1rem;
     z-index: 1;
+    @media (min-width: 768px) {
+      width: 50%;
+      height: 100%;
+    }
   }
-  .work-details {
+  .work-details, .play-details {
     position: relative;
     text-align: left;
     color: white;
@@ -2292,70 +2272,7 @@
       margin-top: 1rem;
       margin-bottom: 1rem;
     }
-    ul {
-      list-style-type: disc;
-      margin: 1rem;
-      font-size: medium;
-    }
-    li {
-      margin: 0.5rem;
-    }
-  }
-  .play-projects {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 3rem;
-    justify-content: center;
-  }
-  .play-card {
-    position: relative;
-    border-radius: 1rem;
-    overflow: hidden;
-    display: flex;
-    width: 100%;
-    height: 28rem;
-  }
-  .play-card img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: 70% 50%;
-    z-index: 0;
-  }
-  .overlay {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 50%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.85);
-    box-shadow: inset 0 0 1rem 0 rgb(0, 0, 0);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem;
-    z-index: 1;
-  }
-  .play-details {
-    position: relative;
-    text-align: left;
-    color: white;
-    margin: 1rem;
-    z-index: 2;
-    h2 {
-      font-size: x-large;
-      font-weight: bold;
-    }
-    p {
-      font-size: medium;
-      margin-top: 1rem;
-      margin-bottom: 1rem;
-    }
-    ol {
-      list-style-type: decimal;
+    ul, ol {
       margin: 1rem;
       font-size: medium;
     }
@@ -2367,101 +2284,83 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    .overview {
-      display: flex;
+  }
+  .overview {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+    margin: 2.5rem 6.25rem;
+    @media (min-width: 768px) {
       flex-direction: row;
-      flex-wrap: wrap;
-      gap: 3rem;
-      justify-content: between;
-      align-self: center;
-      margin: 2.5rem 6.25rem;
-      .overview-text {
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-        align-self: center;
-        text-align: left;
-        width: 70%;
-        h1 {
-          font-size: xx-large;
-          font-weight: bold;
-        }
-        ul {
-          list-style-type: disc;
-          margin: 1rem auto;
-          font-weight: bold;
-        }
-      }
-      .project-image {
-        width: 20%;
-        height: 20%;
-        align-self: center;
-        img {
-          width: 100%;
-          height: 100%;
-          border-radius: 1rem;
-        }
-      }
     }
-    .exploration {
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-      padding-top: 3rem;
-      padding-bottom: 3rem;
-      gap: 3rem;
-      left: 0;
-      right: 0;
-      .exploration-text {
-        gap: 1rem;
-        width: 70%;
-        align-self: center;
-        justify-content: center;
-        text-align: center;
-        h1 {
-          font-size: xx-large;
-          font-weight: bold;
-          margin-bottom: 1rem;
-        }
-        ul {
-          list-style-type: disc;
-          margin: 1rem auto;
-          text-align: center;
-          font-weight: bold;
-          list-style-position: inside;
-        }
-      }
-    }
-    .design {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      gap: 3rem;
-      justify-content: between;
-      align-self: center;
-      margin: 2.5rem 6.25rem;
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-      align-self: center;
-      text-align: left;
+  }
+  .overview-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+    width: 100%;
+    @media (min-width: 768px) {
       width: 70%;
-      h1 {
-        font-size: xx-large;
-        font-weight: bold;
-        text-align: center;
-        margin-bottom: 1rem;
-      }
-      .design-process {
-        width: 90%;
-        height: 90%;
-        align-self: center;
-        img {
-          width: 100%;
-          height: 100%;
-          border-radius: 1rem;
-        }
-      }
+      text-align: left;
+    }
+  }
+  .project-image {
+    width: 80%;
+    height: auto;
+    align-self: center;
+    @media (min-width: 768px) {
+      width: 20%;
+      height: 20%;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 1rem;
+    }
+  }
+  .exploration {
+    display: flex;
+    flex-direction: column;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    gap: 3rem;
+    align-items: center;
+  }
+  .exploration-text {
+    gap: 1rem;
+    width: 90%;
+    text-align: center;
+    @media (min-width: 768px) {
+      width: 70%;
+    }
+  }
+  .design {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+    @media (min-width: 768px) {
+      width: 70%;
+      text-align: left;
+    }
+  }
+  .design-process {
+    width: 100%;
+    height: auto;
+    align-self: center;
+    @media (min-width: 768px) {
+      width: 90%;
+      height: 90%;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 1rem;
     }
   }
 }
