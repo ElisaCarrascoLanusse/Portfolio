@@ -5,7 +5,6 @@
     --text-size-md: 1rem; 
     --text-size-lg: 1.125rem; 
     --color-memory: #eb5f52;
-    --
 }
 
 /* Apply Responsive Text Sizing */
@@ -250,7 +249,7 @@
     .projects-main {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: center;     
         .overview {
             display: flex;
             flex-direction: row;
