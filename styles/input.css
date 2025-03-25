@@ -5,9 +5,11 @@
     --text-size-md: 1rem; 
     --text-size-lg: 1.125rem; 
     --color-memory: #eb5f52;
+    --
 }
 
 /* Apply Responsive Text Sizing */
+
 @media (min-width: 640px) { /* sm breakpoint */
     html {
         font-size: var(--text-size-md);
@@ -28,12 +30,12 @@
     }
 
     h1, h2, h3, h4, h5, h6 {
-        font-weight: bold;
+        font: bold;
     }
 
     body {
         background-color: #404040;
-        color: #FAFAFA;
+        color: #FAFAFAFA;
         gap: 2rem;
     }
 
@@ -87,7 +89,7 @@
         top: 1rem;
         z-index: 1;
         display: flex;
-        flex-direction: column; /* Mobile first */
+        flex-direction: row;
         background-color: #FAFAFA;
         color: #262626;
         border-radius: 1rem;
@@ -95,10 +97,6 @@
         margin: 1.25rem 0;
         box-shadow: inset 0 0 0.5rem 0 rgb(0, 0, 0);
         gap: 2rem;
-
-        @media (min-width: 768px) { /* md breakpoint */
-            flex-direction: row;
-        }
 
         .project-details {
             display: flex;
@@ -111,34 +109,28 @@
         }
 
         p {
-            margin: 1.25rem 0;
+            margin-right: 2.5rem;
+            margin-top: 1.25rem;
+            margin-bottom: 1.25rem;
         }
     }
     
-    /* Work and Play Card Components */
-    .work-projects, .play-projects {
+    /* Work Card Component*/
+    .work-projects {
         display: flex;
         flex-wrap: wrap;
         gap: 3rem;
         justify-content: center; 
     }
-
-    .work-card, .play-card {
+    .work-card {
         position: relative;
         border-radius: 1rem;
         overflow: hidden;
         display: flex;
-        flex-direction: column; /* Mobile first */
         width: 100%;
-        height: auto;
-
-        @media (min-width: 768px) { /* md breakpoint */
-            flex-direction: row;
-            height: 28rem;
-        }
+        height: 28rem;
     }
-
-    .work-card img, .play-card img {
+    .work-card img {
         position: absolute;
         top: 0;
         left: 0;
@@ -147,13 +139,12 @@
         object-fit: cover;
         z-index: 0;
     }
-
     .overlay {
         position: absolute;
         top: 0;
         right: 0;
-        width: 100%;
-        height: 50%;
+        width: 50%;
+        height: 100%;
         background: rgba(0, 0, 0, 0.85); 
         box-shadow: inset 0 0 1rem 0 rgb(0, 0, 0);
         display: flex;
@@ -161,14 +152,8 @@
         justify-content: center;
         padding: 1rem;
         z-index: 1;
-
-        @media (min-width: 768px) { /* md breakpoint */
-            width: 50%;
-            height: 100%;
-        }
     }
-
-    .work-details, .play-details {
+    .work-details {
         position: relative;
         text-align: left;
         color: white;
@@ -185,114 +170,184 @@
             margin-top: 1rem;
             margin-bottom: 1rem;
         }
-
-        ul, ol {
+        ul {
+            list-style-type: disc;
             margin: 1rem;
             font-size: medium;
         }
-
         li {
             margin: 0.5rem;
         }
     }   
     
+    
+    /* Play Card Component*/
+    .play-projects {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3rem;
+        justify-content: center; 
+    }
+    .play-card {
+        position: relative;
+        border-radius: 1rem;
+        overflow: hidden;
+        display: flex;
+        width: 100%;
+        height: 28rem;
+    }
+    .play-card img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 70% 50%;
+        z-index: 0;
+    }
+    .overlay {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.85); 
+        box-shadow: inset 0 0 1rem 0 rgb(0, 0, 0);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+        z-index: 1;
+    }
+    .play-details {
+        position: relative;
+        text-align: left;
+        color: white;
+        margin: 1rem;
+        z-index: 2;
+
+        h2 {
+            font-size: x-large;
+            font-weight: bold;
+        }
+        p {
+            font-size: medium;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+        ol {
+            list-style-type: decimal;
+            margin: 1rem;
+            font-size: medium;
+        }
+        li {
+            margin: 0.5rem;
+        }
+    }  
+
     /* Project Page */
     .projects-main {
         display: flex;
         flex-direction: column;
         justify-content: center;
-    }
-
-    .overview {
-        display: flex;
-        flex-direction: column; /* Mobile first */
-        gap: 3rem;
-        justify-content: center;
-        align-items: center;
-        margin: 2.5rem 6.25rem;
-
-        @media (min-width: 768px) { /* md breakpoint */
+        .overview {
+            display: flex;
             flex-direction: row;
+            flex-wrap: wrap;
+            gap: 3rem;
+            justify-content: between; 
+            align-self: center;
+            margin: 2.5rem 6.25rem;
+            .overview-text {
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                align-self: center;
+                text-align: left;
+                width: 70%;
+                h1 {
+                    font-size: xx-large;
+                    font-weight: bold;
+                }
+                ul {
+                    list-style-type: disc;
+                    margin: 1rem auto;
+                    font-weight: bold;
+                }
+            }
+            .project-image {
+                width: 20%;
+                height: 20%;
+                align-self: center;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 1rem;
+                }
+            }
         }
-    }
 
-    .overview-text {
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-        text-align: center;
-        width: 100%;
+        .exploration {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+            gap: 3rem;
+            left: 0;
+            right: 0;
+            .exploration-text {
+                gap: 1rem;
+                width: 70%;
+                align-self: center;
+                justify-content: center;
+                text-align: center;
+                h1 {
+                    font-size: xx-large;
+                    font-weight: bold;
+                    margin-bottom: 1rem;
+                }
+                ul {
+                    list-style-type: disc;
+                    margin: 1rem auto;
+                    text-align: center;
+                    font-weight: bold;
+                    list-style-position: inside;
+                }
+            }
+        }
 
-        @media (min-width: 768px) { /* md breakpoint */
-            width: 70%;
+        .design {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 3rem;
+            justify-content: between; 
+            align-self: center;
+            margin: 2.5rem 6.25rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            align-self: center;
             text-align: left;
-        }
-    }
-
-    .project-image {
-        width: 80%;
-        height: auto;
-        align-self: center;
-
-        @media (min-width: 768px) { /* md breakpoint */
-            width: 20%;
-            height: 20%;
-        }
-
-        img {
-            width: 100%;
-            height: 100%;
-            border-radius: 1rem;
-        }
-    }
-
-    .exploration {
-        display: flex;
-        flex-direction: column;
-        padding-top: 3rem;
-        padding-bottom: 3rem;
-        gap: 3rem;
-        align-items: center;
-    }
-
-    .exploration-text {
-        gap: 1rem;
-        width: 90%;
-        text-align: center;
-
-        @media (min-width: 768px) { /* md breakpoint */
             width: 70%;
-        }
-    }
-
-    .design {
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-        align-items: center;
-        text-align: center;
-        width: 90%;
-
-        @media (min-width: 768px) { /* md breakpoint */
-            width: 70%;
-            text-align: left;
-        }
-    }
-
-    .design-process {
-        width: 100%;
-        height: auto;
-        align-self: center;
-
-        @media (min-width: 768px) { /* md breakpoint */
-            width: 90%;
-            height: 90%;
-        }
-
-        img {
-            width: 100%;
-            height: 100%;
-            border-radius: 1rem;
+            h1 {
+                font-size: xx-large;
+                font-weight: bold;
+                text-align: center;
+                margin-bottom: 1rem;
+            }
+            .design-process {
+                width: 90%;
+                height: 90%;
+                align-self: center;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 1rem;
+                }
+            }
         }
     }
 }
