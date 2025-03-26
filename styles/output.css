@@ -57,6 +57,7 @@
     --text-size-md: 1rem;
     --text-size-lg: 1.125rem;
     --color-memory: #eb5f52;
+    --color-atip: #0ab9c9;
   }
 }
 @layer base {
@@ -1255,6 +1256,9 @@
   .bg-\[var\(--my_variable\)\] {
     background-color: var(--my_variable);
   }
+  .bg-atip {
+    background-color: var(--color-atip);
+  }
   .bg-memory {
     background-color: var(--color-memory);
   }
@@ -1471,6 +1475,9 @@
   }
   .px-15 {
     padding-inline: calc(var(--spacing) * 15);
+  }
+  .py-4 {
+    padding-block: calc(var(--spacing) * 4);
   }
   .py-5 {
     padding-block: calc(var(--spacing) * 5);

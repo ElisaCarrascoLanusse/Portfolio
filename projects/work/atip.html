@@ -9,37 +9,41 @@
 <body>
 <div id="header"></div>
 
-<main class="projects-main">
+<main class="projects-main m-0">
    
     <!-- Overview -->
     <section class="overview">
-        <div class="overview-text">
+        <div class="overview-text text-justify">
             <h1>Overview</h1>
-            <p>Since it’s creation in 2014, Laboratoria has been consistently growing and adapting in their mission to provide tech education for low income women in Latin America. As part of this growth, a focus on community engagement has become vital. Through communications such as emails and newsletters, I  worked with the Partnerships team to improve the design of communications in order to foster engagement.</p>
-            <ul id="laboratoria-list">
-                <li>Role: Research, design, and user testing</li>
-                <li>Tools: Figma, Procreate, Hubspot, R Studio</li>
-                <li>Duration: 6 months</li>
+            <p>The <a href="https://www.iistl.org/"><u>International Institute of Saint Louis</u></a> is a key resource for immigrants in Eastern Missouri. Among their other resources and efforts, they have an Anti-Trafficking In Persons Program team that focuses on identifying and aiding victims of human trafficking. As one of the only ATIP teams in St. Louis that works with labor trafficking victims, my work with the team mainly focused on the creation of accessible resources for clients in English and Spanish as well as the analysis and identification of trends in labor violation data.</p>
+            <ul id="atip-list">
+                <li>Role: Research, data-analysis, and design</li>
+                <li>Tools: R Studio, Procreate, and Figma</li>
+                <li>Duration: 7 months</li>
             </ul>
         </div>
         <figure class="project-image">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStvWMAvhXjBUD4SgK-umiZxPPtjgHmNmNRhw&s" alt="ProCase Displays" width="100">
+            <img src="https://github.com/ElisaCarrascoLanusse/Portfolio/blob/main/assets/images/iistl-img.png?raw=true" alt="Laboratoria" width="100">
         </figure>
     </section>
 
     
-     <!-- Understanding  The Problem -->
-     <section class="problem">
-        <div id="laboratoria-background">
-            <div class="problem-text">
-                <h1>Understanding The Problem</h1>
-                <p>Laboratoria's Partnerships team relies on their newsletter to maximize engagement and effectively communicate with current and potential donors and partners, including both corporations and individuals. Analysis of the las 7 newsletters suggests the following:</p>
-                <ul>
-                    <li>The average <u>open rate</u> was 28.10%</li>
-                    <li>The average <u>click rate</u> was 5.50%</li>
-                    <li>The average <u>unsubscribing rate</u> was 2.04%</li>
-                </ul>
-            </div>
+     <!-- Exploration -->
+     <section class="exploration w-full left-0 flex flex-wrap overflow-hidden bg-atip text-neutral-50 mx-0 overflow-x-hidden">
+        <div class="exploration-text">
+            <h1>Exploration</h1>
+            <div class="exploration-card bg-neutral-50 text-neutral-800 p-16 rounded-2xl inset-shadow-neutral-400">
+            <p>Working with the ATIP team really allowed me to put into practice one of my key beliefs: Prescriptive solutions can be more harmful than good, which is why data-based solutions are essential in tackling social issues. During my time with the ATIP team I was able to identify, clean, and analyze data official data sets on labor practices. <i>The goal of this analysis was to bring light to some of the current trends in labor law violations, immigrant workers, and the industries in which labor trafficking might be encountered.</i> Specifically I looked at the following resources:</p>
+            <ul class="list-disc font-medium">
+                <li><a href="https://enforcedata.dol.gov/views/data_catalogs.php"><u>US Department of Labor</u></a></li> 
+                <li><a href="https://www.uscis.gov/tools/reports-and-studies/immigration-and-citizenship-data"><u>US Citizenship and Immigration Services</u></a></li> 
+                <li><a href="https://www.ncfh.org/index.html"><u>National Center for Farmworker Health</u></a></li>
+            </ul>
+            <h2 class="font-bold text-left py-4 text-lg">Data Cleaning</h2>
+            <p class="text-justify">After compiling the data, <i>R Studio</i> was used to process, clean, and analyze it in search of possible trends. The data was filtered by the following locations: <i>Saint Louis, Chesterfield, Clayton, Kirkwood, Florissant, Saint Charles, O'fallon, Wentzville, Lake Saint Louis, Arnold, Festus, Hillsboro, and De Soto.</i>               
+            </p>
+            <h2 class="font-bold py-4 text-lg text-right">Analysis Methods</h2>
+            <p class="text-justify">Most of the analysis focuses on the relationships between two or more variables. Due to the nature of the data and the research objective, this is not meant to show or prove any causation, but rather explore possible correlations. It is divided into five sections: <i>Wage and Hour Violations, OSHA Violations, Foreign Labor Data, and H Visa Employer Data.</i> Generally</p>
         </div>
      </section>
     
@@ -56,12 +60,15 @@
         <div id="laboratoria-background">
             <div class="research-text">
                 <h1>Research</h1>
+                <div id="research-pt1">
+                    <div class="persona"></div>
+                    <ul>
+                        <li>Corporate Donor</li>
+                        <li>Individual Donor</li>
+                        <li>Partner Donor</li>
+                    </ul>
                 <p>The research process begun by  defining the target audience. The Partnerships team works directly with donors and partners, so based on this I created three user personas:</p>
-                <ul>
-                    <li>Corporate Donor</li>
-                    <li>Individual Donor</li>
-                    <li>Partner Donor</li>
-                </ul>
+            </div>
                 <p>After defining the target audience, I conducted a survey to understand the current perception of the newsletter. The survey was sent to 100 current donors and partners, and the results were as follows:</p>
                 <ul>
                     <li>60% of respondents found the newsletter "informative"</li>
