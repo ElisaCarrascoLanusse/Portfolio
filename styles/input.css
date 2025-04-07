@@ -95,7 +95,7 @@
         border-radius: 1rem;
         padding: 3.75rem;
         margin: 1.25rem 0;
-        box-shadow: inset 0 0 0.5rem 0 rgb(0, 0, 0);
+        box-shadow: 0px 4px 16px rgba(17,17,26,0.1), 0px 8px 24px rgba(17,17,26,0.1), 0px 16px 56px rgba(17,17,26,0.1);        
         gap: 2rem;
 
         .project-details {
@@ -129,6 +129,7 @@
         display: flex;
         width: 100%;
         height: 28rem;
+        box-shadow: 0px 4px 16px rgba(17,17,26,0.1), 0px 8px 24px rgba(17,17,26,0.1), 0px 16px 56px rgba(17,17,26,0.1);
     }
     .work-card img {
         position: absolute;
@@ -146,7 +147,6 @@
         width: 50%;
         height: 100%;
         background: rgba(0, 0, 0, 0.85); 
-        box-shadow: inset 0 0 1rem 0 rgb(0, 0, 0);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -195,6 +195,7 @@
         display: flex;
         width: 100%;
         height: 28rem;
+        box-shadow: 0px 4px 16px rgba(17,17,26,0.1), 0px 8px 24px rgba(17,17,26,0.1), 0px 16px 56px rgba(17,17,26,0.1);
     }
     .play-card img {
         position: absolute;
@@ -213,7 +214,6 @@
         width: 50%;
         height: 100%;
         background: rgba(0, 0, 0, 0.85); 
-        box-shadow: inset 0 0 1rem 0 rgb(0, 0, 0);
         display: flex;
         align-items: center;
         justify-content: center;
