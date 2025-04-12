@@ -418,6 +418,9 @@
   .my-10 {
     margin-block: calc(var(--spacing) * 10);
   }
+  .my-12 {
+    margin-block: calc(var(--spacing) * 12);
+  }
   .my-auto {
     margin-block: auto;
   }
@@ -588,6 +591,9 @@
   }
   .w-11\/12 {
     width: calc(11/12 * 100%);
+  }
+  .w-14\/17 {
+    width: calc(14/17 * 100%);
   }
   .w-16 {
     width: calc(var(--spacing) * 16);
