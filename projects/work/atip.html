@@ -70,7 +70,49 @@
             <div class="wage-violations-text w-14/17 mx-auto my-12">
                 <h1 class="text-3xl font-bold mb-4">Wage and Hour Violations</h1>
                 <p class="text-justify">Following the Fair Labor Standards Act, the Department of Labor has established guidelines and norms to ensure workers rights to fair wages. They conduct investigations on reports of discriminatory and illegal practices in all legitimate labor industries. The data was initially cleaned and filtered to focus on the <i>city and industry</i> as main variables, with the number of investigations and violations being examined for each. This is meant to highlight patterns in the wage and hour violations reported in different industries, pointing at particular spots that we want to keep an eye on. The analysis uses registered data from 2018 to 2024.</p>
+                <div class="industry-city-wh-violations flex flex-row gap-8">
+                    <!-- Column 1: Image + Caption -->
+                    <div class="w-1/2 flex flex-col items-center">
+                        <img class="w-full h-auto rounded-2xl mt-8" src="https://github.com/ElisaCarrascoLanusse/Portfolio/blob/main/assets/images/case_violations_plot.png?raw=true">
+                        <figcaption class="text-sm mt-4 text-center">Proportion of wage and hour case violations by industry category and city (2018-2024) graph.</figcaption>
+                    </div>
+                
+                    <!-- Column 2: Paragraph -->
+                    <div class="m-8 w-1/2 flex flex-col items-center">
+                        <p class="text-justify">The graph shows the proportion of wage and hour case violations by industry category and city. The data was organized into the following categories:</p>
+                        <ul class="columns-2 gap-12 list-disc my-4">
+                            <li>Construction</li>
+                            <li>Factory</li>
+                            <li>Health and Beauty</li>
+                            <li>Hospitality</li>
+                            <li>Office</li>
+                            <li>Retail</li>
+                            <li>Transportation</li>
+                            <li>Vocational</li>
+                            <li>Care</li>
+                            <li>Civil/Public</li>
+                            <li>NA</li>
+                        </ul>
+                        <p>In St. Louis, the two industries with most violations were care and hospitality, with 2,423 violations between the two in this period of time. It is important to note these are industries where a significant amount of workers are immigrants, making them particularly vulnerable to this type of violation.</p>
+                    </div>
+                </div>    
+                <p>Overall there were 4,342 wage and hour violation cases from 2018 to 2024 in Eastern Missouri. Top actors in each industry were also found but due to privacy reasons won't be displayed here. The majority of the violations were related to minimum wage, record keeping, and overtime cases.</p>            
+                </div>
             </div>
+        </section>
+
+        <!-- OSHA Violations -->
+        <section class="osha-violations w-full left-0 flex flex-wrap overflow-hidden bg-atip text-neutral-50 mx-0 overflow-x-hidden">
+            <div class="osha-violations-text">
+                <h1 class="text-3xl font-bold text-center mt-12 mb-4">OSHA Violations</h1>
+                <div class="exploration-card bg-neutral-50 text-neutral-800 p-16 w-7/10 mx-auto rounded-2xl inset-shadow-neutral-400 text-center">
+                    <p>The <b>Occupational Safety and Health Administration</b> is the federal agency in charge of creating, maintaining, and enforcing health and safety laws in the workplace. OSHA conducts workplace inspections throughout the year, both in response to complaints/reports and routinely.</p>
+                    <h2 class="font-bold text-left py-4 text-lg">Data Cleaning</h2>
+                    <p class="text-justify">After compiling the data, <i>R Studio</i> was used to process, clean, and analyze it in search of possible trends. The data was filtered by the following locations: <i>Saint Louis, Chesterfield, Clayton, Kirkwood Florissant, Saint Charles, O'fallon, Wentzville, Lake Saint Louis, Arnold, Festus, Hillsboro, and De Soto.</i> Due to the nature of the data, entries with NAs in key variables was excluded. This data goes up to 2024 and is not influenced by new labor and immigration laws of 2025.
+                    </p>
+                    <h2 class="font-bold py-4 text-lg text-right">Analysis Methods</h2>
+                    <p class="text-justify">As an initial exploratory approach, most of the descriptive analysis focuses on the relationships between two or more variables. Due to the nature of the data and the research objective, this is not meant to show or prove any causation, but rather explore possible correlations. It is divided into four sections: <i>Wage and Hour Violations, OSHA Violations, Foreign Labor Data, and H Visa Employer Data.</i></p>
+                </div>
         </section>
 
         <!-- Results -->

@@ -391,6 +391,9 @@
   .m-2 {
     margin: calc(var(--spacing) * 2);
   }
+  .m-8 {
+    margin: calc(var(--spacing) * 8);
+  }
   .m-10 {
     margin: calc(var(--spacing) * 10);
   }
@@ -403,8 +406,14 @@
   .mx-5 {
     margin-inline: calc(var(--spacing) * 5);
   }
+  .mx-8 {
+    margin-inline: calc(var(--spacing) * 8);
+  }
   .mx-auto {
     margin-inline: auto;
+  }
+  .my-0 {
+    margin-block: calc(var(--spacing) * 0);
   }
   .my-2 {
     margin-block: calc(var(--spacing) * 2);
@@ -414,6 +423,9 @@
   }
   .my-5 {
     margin-block: calc(var(--spacing) * 5);
+  }
+  .my-8 {
+    margin-block: calc(var(--spacing) * 8);
   }
   .my-10 {
     margin-block: calc(var(--spacing) * 10);
@@ -433,11 +445,23 @@
   .mt-4 {
     margin-top: calc(var(--spacing) * 4);
   }
+  .mt-8 {
+    margin-top: calc(var(--spacing) * 8);
+  }
+  .mt-10 {
+    margin-top: calc(var(--spacing) * 10);
+  }
+  .mt-12 {
+    margin-top: calc(var(--spacing) * 12);
+  }
   .mr-10 {
     margin-right: calc(var(--spacing) * 10);
   }
   .mb-4 {
     margin-bottom: calc(var(--spacing) * 4);
+  }
+  .mb-8 {
+    margin-bottom: calc(var(--spacing) * 8);
   }
   .ml-6 {
     margin-left: calc(var(--spacing) * 6);
@@ -547,6 +571,9 @@
   .h-80 {
     height: calc(var(--spacing) * 80);
   }
+  .h-auto {
+    height: auto;
+  }
   .h-full {
     height: 100%;
   }
@@ -585,6 +612,12 @@
   }
   .w-7\/8 {
     width: calc(7/8 * 100%);
+  }
+  .w-7\/10 {
+    width: calc(7/10 * 100%);
+  }
+  .w-7\/20 {
+    width: calc(7/20 * 100%);
   }
   .w-10\/11 {
     width: calc(10/11 * 100%);
@@ -746,6 +779,9 @@
   .cursor-pointer {
     cursor: pointer;
   }
+  .cursor-zoom-in {
+    cursor: zoom-in;
+  }
   .touch-pinch-zoom {
     --tw-pinch-zoom: pinch-zoom;
     touch-action: var(--tw-pan-x,) var(--tw-pan-y,) var(--tw-pinch-zoom,);
@@ -812,6 +848,9 @@
   }
   .appearance-none {
     appearance: none;
+  }
+  .columns-2 {
+    columns: 2;
   }
   .columns-auto {
     columns: auto;
@@ -1010,6 +1049,9 @@
   }
   .justify-items-stretch {
     justify-items: stretch;
+  }
+  .gap-0 {
+    gap: calc(var(--spacing) * 0);
   }
   .gap-4 {
     gap: calc(var(--spacing) * 4);
