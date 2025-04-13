@@ -61,7 +61,7 @@
                     <p class="text-justify">After compiling the data, <i>R Studio</i> was used to process, clean, and analyze it in search of possible trends. The data was filtered by the following locations: <i>Saint Louis, Chesterfield, Clayton, Kirkwood Florissant, Saint Charles, O'fallon, Wentzville, Lake Saint Louis, Arnold, Festus, Hillsboro, and De Soto.</i> Due to the nature of the data, entries with NAs in key variables was excluded. This data goes up to 2024 and is not influenced by new labor and immigration laws of 2025.
                     </p>
                     <h2 class="font-bold py-4 text-lg text-right">Analysis Methods</h2>
-                    <p class="text-justify">As an initial exploratory approach, most of the descriptive analysis focuses on the relationships between two or more variables. Due to the nature of the data and the research objective, this is not meant to show or prove any causation, but rather explore possible correlations. It is divided into four sections: <i>Wage and Hour Violations, OSHA Violations, Foreign Labor Data, and H Visa Employer Data.</i></p>
+                    <p class="text-justify">As an initial exploratory approach, most of the descriptive analysis focuses on the relationships between two or more variables. Due to the nature of the data and the research objective, this is not meant to show or prove any causation, but rather explore possible correlations. It is divided into four sections: <i>Wage and Hour Violations, OSHA Violations, Foreign Labor Data, and H Visa Employer Data.</i> Below I will explore the two most significant ones in terms of data availability and observation fo trends.</p>
                 </div>
         </section>
 
@@ -103,34 +103,33 @@
 
         <!-- OSHA Violations -->
         <section class="osha-violations w-full left-0 flex flex-wrap overflow-hidden bg-atip text-neutral-50 mx-0 overflow-x-hidden">
-            <div class="osha-violations-text">
+            <div class="osha-violations-text mb-12">
                 <h1 class="text-3xl font-bold text-center mt-12 mb-4">OSHA Violations</h1>
                 <div class="exploration-card bg-neutral-50 text-neutral-800 p-16 w-7/10 mx-auto rounded-2xl inset-shadow-neutral-400 text-center">
-                    <p>The <b>Occupational Safety and Health Administration</b> is the federal agency in charge of creating, maintaining, and enforcing health and safety laws in the workplace. OSHA conducts workplace inspections throughout the year, both in response to complaints/reports and routinely.</p>
-                    <h2 class="font-bold text-left py-4 text-lg">Data Cleaning</h2>
-                    <p class="text-justify">After compiling the data, <i>R Studio</i> was used to process, clean, and analyze it in search of possible trends. The data was filtered by the following locations: <i>Saint Louis, Chesterfield, Clayton, Kirkwood Florissant, Saint Charles, O'fallon, Wentzville, Lake Saint Louis, Arnold, Festus, Hillsboro, and De Soto.</i> Due to the nature of the data, entries with NAs in key variables was excluded. This data goes up to 2024 and is not influenced by new labor and immigration laws of 2025.
-                    </p>
-                    <h2 class="font-bold py-4 text-lg text-right">Analysis Methods</h2>
-                    <p class="text-justify">As an initial exploratory approach, most of the descriptive analysis focuses on the relationships between two or more variables. Due to the nature of the data and the research objective, this is not meant to show or prove any causation, but rather explore possible correlations. It is divided into four sections: <i>Wage and Hour Violations, OSHA Violations, Foreign Labor Data, and H Visa Employer Data.</i></p>
+                    <p>The <b>Occupational Safety and Health Administration</b> is the federal agency in charge of creating, maintaining, and enforcing health and safety laws in the workplace. OSHA conducts workplace inspections throughout the year, both in response to complaints/reports and routinely. In inspecting the data I was particularly curious about the nature of inspections, which would give some insight into how common reports are and what conditions lead to investigations by OSHA.</p>
+                    <img class="w-full h-auto rounded-xl mt-8" src="https://github.com/ElisaCarrascoLanusse/Portfolio/blob/main/assets/images/insp_type_year_plot%202.png?raw=true">
+                    <figcaption class="text-sm mt-4 text-center">Proportion of OSHA inspections by type and year (2018-2024) graph.</figcaption>
+                    <p class="text-center mt-8">There has been a general decrease on both health and safety inspections, however safety inspections are still more common than health inspections overall. 2021 was the year with lowest inspections, most likely due to the increase of remote work and closing of offices due to the pandemic. Planned inspections were the most common overall, however the second most common type was complaint based inspections. 2018 and 2019 had noticeably more inspections than the following years, with 2021 being particularly low in inspections. This further reinforces the likelihood of physical spaces being closed due to the pandemic, relieving some of the pressure on the health and safety risks.</p>
                 </div>
         </section>
 
-        <!-- Results -->
+        <!--  -->
+
+        <!-- Conclusion -->
         <section class="overview">
             <div class="text-justify">
-                <h1 class="text-right font-bold text-3xl my-4">Results and Visualizations</h1>
-                <p>The <a href="https://www.iistl.org/"><u>International Institute of Saint Louis</u></a> is a key
-                    resource for immigrants in Eastern Missouri. Among their other resources and efforts, they have an
-                    Anti-Trafficking In Persons Program team that focuses on identifying and aiding victims of human
-                    trafficking. As one of the only ATIP teams in St. Louis that works with labor trafficking victims,
-                    my work with the team mainly focused on the creation of accessible resources for clients in English
-                    and Spanish as well as the analysis and identification of trends in labor violation data.</p>
-                <ul id="atip-list">
-                    <li>Role: Research, data-analysis, and design</li>
-                    <li>Tools: R Studio, Procreate, and Figma</li>
-                    <li>Duration: 7 months</li>
-                </ul>
+                <h1 class="text-right font-bold text-3xl my-4">Conclusion and Notes</h1>
+                <p>This exploratory investigation was useful in understanding key actors in the current laboral landscape of Eastern Missouri. Other graphs and the R files can be requested through the contact form for anyone interested in looking at the data. The analysis and visualizations were used in a presentation to different stakeholders in the prevention of human trafficking including authorities as a guide to trends and areas to keep an eye on. While working on this project I kept running into one particular issue: <i>the massive gaps in the data</i>. This forced me to step back and look at what was available in order to understand the context under which the lack of data lies.</p> 
+                <p class="mt-8">Specifically when looking at immigrant workers specifically there was almost no mention in the data, mirroring the farming industry which was rarely present in the data. This could in part be explained by the proximity to the city of St. Louis but also shows the need for more research and data collection when it comes to farm labor and the experiences of immigrants within the industry in Eastern Missouri. Future research should focus on filling the gaps in data and possibly the creation of a single data base that contains data from the above resources in order to make tracking these trends more accessible.</p>
             </div>
+        </section>
+
+        <section class="atip-presentation w-1/2 mx-auto mb-8">
+            <div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%; padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden; border-radius: 8px; will-change: transform;">
+                <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;" src="https://www.canva.com/design/DAGQjgFw25E/enbfHjmGfQPdcqeLcSgT7w/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+                </iframe>
+            </div>
+            <a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGQjgFw25E&#x2F;enbfHjmGfQPdcqeLcSgT7w&#x2F;view?utm_content=DAGQjgFw25E&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener"></a>
         </section>
     </main>
 
