@@ -15,9 +15,8 @@ document.addEventListener("DOMContentLoaded", () => {
     // Function to add click event listeners
     const addClickEvent = (selector, callback) => {
         document.querySelector(selector)?.addEventListener("click", callback);
-        
-    }; 
-    
+    };
+
     // Load components
     loadComponent('header', './components/header.html', attachHeaderEvents);
     loadComponent('footer', './components/footer.html');
@@ -27,6 +26,15 @@ document.addEventListener("DOMContentLoaded", () => {
         addClickEvent("#header-img", () => window.location.href = "./index.html");
         addClickEvent("#header-h1", () => window.location.href = "./index.html");
         attachNavigationEvents();
+
+        // Move the hamburger toggle inside here so it runs after header loads
+        const menuButton = document.getElementById('menu-button');
+        const menu = document.getElementById('menu');
+        if (menuButton && menu) {
+            menuButton.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+            });
+        }
     }
 
     function attachNavigationEvents() {
@@ -36,10 +44,6 @@ document.addEventListener("DOMContentLoaded", () => {
             { selector: "#about", url: "./about.html" }
         ].forEach(({ selector, url }) => addClickEvent(selector, () => window.location.href = url));
     }
-    document.getElementById('menu-button').addEventListener('click', function () {
-        const menu = document.getElementById('menu');
-        menu.classList.toggle('hidden');
-    });   
 
     function attachContactFormEvents() {
         const contactFormContainer = document.getElementById("contact-form-container");
@@ -64,4 +68,3 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 });
-
