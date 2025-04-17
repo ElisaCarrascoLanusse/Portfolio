@@ -16,14 +16,20 @@
             >
             <h1 id="header-h1" class="text-2xl font-bold hover:cursor-pointer">Elisa Carrasco Lanusse</h1>
         </div>
-        <nav id="menu" class="flex items-center"></nav>
-            <ul class="flex space-x-10 py-5 text-lg font-bold justify-between">
-            <li><a href="#work-section" id="work" class="underline uppercase">Work</a></li>
-            <li><a href="#play-section" id="play" class="underline uppercase">Play</a></li>
-            <li><a href="#about-section" id="about" class="underline uppercase">About</a></li>
-            <li><a href="#contact-section" id="contact" class="underline uppercase">Contact</a></li>
+        <!-- Hamburger Button -->
+        <button id="menu-button" class="flex flex-col space-y-1 justify-center pl-4 hover:cursor-pointer md:hidden">
+            <span class="block w-8 h-0.75 my-1 bg-neutral-50 rounded-2xl"></span>
+            <span class="block w-8 h-0.75 my-1 bg-neutral-50 rounded-2xl"></span>
+            <span class="block w-8 h-0.75 my-1 bg-neutral-50 rounded-2xl"></span>
+        </button>
+        <nav id="menu" class="hidden absolute top-20 left-0 right-0 bg-neutral-800 md:static md:flex md:items-center">
+            <ul class="flex flex-col md:flex-row text-lg font-bold uppercase text-center md:space-x-10 space-y-4 md:space-y-0 py-4 md:py-0">
+              <li><a href="#work-section" id="work" class="underline hover:text-green-600">Work</a></li>
+              <li><a href="#play-section" id="play" class="underline hover:text-green-600">Play</a></li>
+              <li><a href="#about-section" id="about" class="underline hover:text-green-600">About</a></li>
+              <li><a href="#contact-section" id="contact" class="underline hover:text-green-600">Contact</a></li>
             </ul>
-        </nav>
+          </nav>
     </header>
 
     <script src="../scripts/main.js"></script>

@@ -15,8 +15,14 @@ document.addEventListener("DOMContentLoaded", () => {
     // Function to add click event listeners
     const addClickEvent = (selector, callback) => {
         document.querySelector(selector)?.addEventListener("click", callback);
+        
     };
 
+    document.getElementById('menu-button').addEventListener('click', function () {
+        const menu = document.getElementById('menu');
+        menu.classList.toggle('hidden');
+    });    
+    
     // Load components
     loadComponent('header', './components/header.html', attachHeaderEvents);
     loadComponent('footer', './components/footer.html');
