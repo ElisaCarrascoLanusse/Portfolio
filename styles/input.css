@@ -1,11 +1,25 @@
 @import "tailwindcss";
 
 @theme {
-    --text-size-sm: 0.875rem;  
+    /* Text Size */
+    --text-size-sm: 0.875rem; 
     --text-size-md: 1rem; 
     --text-size-lg: 1.125rem; 
+
+    /* Colors */
+    --color-background-100: #1C1C1C;
+    --color-background-75: #2F2F2F;
+    --color-background-50: #858585;
+    --color-text: #F2F1EA;
+    --color-accent-100: #EF4B35;
+    --color-accent-50: #F45D48;
+    --color-hover-100: #1E815D;
+    --color-hover-50: #18B57C;
+
+
     --color-memory: #eb5f52;
     --color-atip: #0ab9c9;
+    
 }
 
 /* Apply Responsive Text Sizing */
@@ -23,19 +37,28 @@
     }
 }
 
+@font-face {
+    font-family: 'Tanker';
+    font-display: swap;
+    size-adjust: 150%;
+    src: url('../assets/fonts/Tanker-Regular.ttf') format('TrueType');
+}
+
 @layer base {
     html {
         scroll-behavior: smooth;
-        font-size: var(--text-size-sm);
     }
+
 
     h1, h2, h3, h4, h5, h6 {
         font: bold;
+        font-family: 'Tanker', sans-serif;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
     }
 
     body {
         background-color: #404040;
-        color: #FAFAFAFA;
         gap: 2rem;
     }
 
@@ -43,29 +66,42 @@
         margin-top: 8rem;
     }
     
+    nav {
+        font-family: 'Tanker', sans-serif;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+    }
+
+    /* Buttons - Light and Dark */
     .btn {
-        background-color: #FAFAFA;
-        color: #262626;
         cursor: pointer;
         font-weight: 800;
         padding: 1rem 1.5rem;
         border-radius: 1rem;
+        background-color: #F2F1EA;
+        color:#2F2F2F;
+        font-family: 'Tanker', sans-serif;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
     }
     .btn:hover {
-        background-color: #00A63E;
-        color: #FAFAFA;
+        background-color: #18B57C;
+        color: #F2F1EA;
     }
 
     .btn-dark {
-        background-color: #262626;
-        color: #FAFAFA;
+        background-color: #1C1C1C;
+        color: #F2F1EA;
         cursor: pointer;
         font-weight: 800;
         padding: 1rem 1.5rem;
+        font-family: 'Tanker', sans-serif;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
     }
     .btn-dark:hover {
-        background-color: #00A63E;
-        color: #FAFAFA;
+        background-color: #23B881;
+        color: #F2F1EA;
     }
 }
 
@@ -90,7 +126,7 @@
         z-index: 1;
         display: flex;
         flex-direction: row;
-        background-color: #FAFAFA;
+        background-color: #F2F1EA;
         color: #262626;
         border-radius: 1rem;
         padding: 3.75rem;
@@ -114,72 +150,6 @@
             margin-bottom: 1.25rem;
         }
     }
-    
-    /* Work Card Component*/
-    .work-projects {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 3rem;
-        justify-content: center; 
-    }
-    .work-card {
-        position: relative;
-        border-radius: 1rem;
-        overflow: hidden;
-        display: flex;
-        width: 100%;
-        height: 28rem;
-        box-shadow: 0px 4px 16px rgba(17,17,26,0.1), 0px 8px 24px rgba(17,17,26,0.1), 0px 16px 56px rgba(17,17,26,0.1);
-    }
-    .work-card img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        z-index: 0;
-    }
-    .overlay {
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 50%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.85); 
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 1rem;
-        z-index: 1;
-    }
-    .work-details {
-        position: relative;
-        text-align: left;
-        color: white;
-        margin: 1rem;
-        z-index: 2;
-
-        h2 {
-            font-size: x-large;
-            font-weight: bold;
-        }
-
-        p {
-            font-size: medium;
-            margin-top: 1rem;
-            margin-bottom: 1rem;
-        }
-        ul {
-            list-style-type: disc;
-            margin: 1rem;
-            font-size: medium;
-        }
-        li {
-            margin: 0.5rem;
-        }
-    }   
-    
     
     /* Play Card Component*/
     .play-projects {
@@ -207,23 +177,11 @@
         object-position: 70% 50%;
         z-index: 0;
     }
-    .overlay {
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 50%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.85); 
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 1rem;
-        z-index: 1;
-    }
+    
     .play-details {
         position: relative;
         text-align: left;
-        color: white;
+        color: F2F1EA;
         margin: 1rem;
         z-index: 2;
 

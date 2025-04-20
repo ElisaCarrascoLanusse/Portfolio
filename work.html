@@ -7,21 +7,21 @@
     <link rel="stylesheet" href="styles/output.css">  
 </head>
 
-    <body class="body" id="work-body">
+    <body class="body bg-background-75" id="work-body">
 
     <div id="header"></div>
 
-    <main class="main">
+    <main class="main md:mt-0 mx-8 md:mx-16 text-text">
         <!-- Introduction -->
         <section class="work-introduction flex flex-col my-10 items-center gap-8">
-            <h1 class="page-title">WORK</h1>
+            <h1 class="page-title font-title">WORK</h1>
         </section>
 
-        <section class="work-projects flex flex-col">
+        <section class="flex flex-wrap justify-center flex-col gap-8 mb-16">
 
-            <div class="work-card work-project inset-shadow-neutral-400" id="atip-project">
-                <img class="rounded-2xl w-full" src="https://github.com/ElisaCarrascoLanusse/Portfolio/blob/main/assets/images/labor-trafficking.png?raw=true">
-                <div class="overlay items-center" id="atip-overlay">
+            <div class="inset-shadow-neutral-400 flex flex-col sm:flex-row w-full" id="atip-project">
+                <div class="rounded-2xl w-auto sm:w-full bg-[url(https://github.com/ElisaCarrascoLanusse/Portfolio/blob/main/assets/images/labor-trafficking.png?raw=true)]">
+                <div class="items-center bg-background-100 backdrop-opacity-50" id="atip-overlay">
                     <div class="work-details">
                         <h2>Labor Violations: Anti-Trafficking In Persons In Eastern Missouri</h2> 
                         <p>As an intern with the International Institute of St. Louis' ATIP team, I researched labor violations in Eastern Missouri, analyzed data to identify patterns, and created infographics and reports to support stakeholder engagement and client resources.</p>
@@ -36,7 +36,7 @@
             </div>
             
 
-            <div class="work-card  work-project  inset-shadow-neutral-400" id="memory-project">
+            <div class="work-card work-project inset-shadow-neutral-400 flex flex-col sm:flex-row" id="memory-project">
                 <img class="rounded-2xl w-full" src="https://github.com/ElisaCarrascoLanusse/Portfolio/blob/main/assets/images/memory-matters.png?raw=true">
                 <div class="overlay items-center" id="memory-overlay">
                     <div class="work-details">
@@ -67,7 +67,6 @@
                     </div>
                 </div>
             </div>
-
         </section>
         
         <div id="contact-form-cont"></div>
