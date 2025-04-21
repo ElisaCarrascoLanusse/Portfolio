@@ -14,25 +14,30 @@
     <main class="main md:mt-0 mx-8 md:mx-16 text-text">
         <!-- Introduction -->
         <section class="play-introduction flex flex-col my-10 items-center gap-8">
-            <h1 class="page-title">PLAY</h1>
+            <h1 class="page-title font-title">PLAY</h1>
         </section>
 
-        <section class="play-projects flex flex-col">
+        <section class="flex flex-wrap justify-center flex-col gap-8 mb-16">
 
-            <div class="play-card play-project inset-shadow-neutral-400 mb-12" id="theology-project">
-                <img class="rounded-2xl h-full" src="https://github.com/ElisaCarrascoLanusse/Portfolio/blob/main/assets/images/theology.png?raw=true">
-                <div class="overlay items-center" id="atip-overlay">
-                    <div class="play-details">
-                        <h2>Theology of Love: A Fallible God</h2> 
-                        <p>A series of illustrations inspired by Jorge Luis Borges’ phrase "To fall in love is to create a religion that has a fallible god." As a collection they form an instruction manual that breaks down the phrase in five steps.</p>
-                        <ol class="font-bold" id="theology-list">
+            <!-- Theology -->
+            <div class="relative flex flex-col sm:flex-row w-full max-w-5xl rounded-2xl shadow-lg overflow-hidden h-auto" id="theology-project">
+
+                <div class="sm:w-1/2 h-64">
+                    <img class="flex object-cover" src="https://github.com/ElisaCarrascoLanusse/Portfolio/blob/main/assets/images/theology.png?raw=true">
+                </div>
+
+                <div class="flex items-center justify-center bg-background-100 w-full sm:w-1/2 p-6 text-text" id="atip-overlay">
+                    <div class="text-center sm:text-left space-y-4">
+                        <h2 class="text-xl font-bold">Theology of Love: A Fallible God</h2> 
+                        <p class="text-base">A series of illustrations inspired by Jorge Luis Borges’ phrase "To fall in love is to create a religion that has a fallible god." As a collection they form an instruction manual that breaks down the phrase in five steps.</p>
+                        <ol class="list-disc list-inside space-y-1 text-base font-medium" id="theology-list">
                             <li>Belief in the supernatural</li> 
                             <li>The sacred and the profane</li>
                             <li>Rituals</li>
                             <li>Place of worship</li>
                             <li>Prayer and other forms of communication</li>
                         </ol>
-                        <button class="btn w-sm mt-4" id="theology-btn">Learn More</button>
+                        <button class="btn mt-4" id="theology-btn">Learn More</button>
                     </div>
                 </div>
             </div>
