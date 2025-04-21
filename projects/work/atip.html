@@ -36,7 +36,7 @@
         <!-- Exploration -->
         <section class="w-full left-0 flex flex-wrap overflow-hidden bg-atip text-text mx-0 overflow-x-hidden">
             <div class="exploration-text text-justify flex flex-col my-10 text-lg">
-                <h1 class="text-3xl font-bold text-center mb-8">Exploration</h1>
+                <h1 class="text-3xl font-bold text-center mb-4">Exploration</h1>
                 <div class="bg-text text-neutral-800 p-16 rounded-2xl inset-shadow-neutral-400 mx-4 sm:mx-32">
                     <p>Working with the ATIP team really allowed me to put into practice one of my key beliefs:
                         Prescriptive solutions can be more harmful than good, which is why data-based solutions are
@@ -65,12 +65,12 @@
          <section class="mx-8 md:mx-16 flex flex-col sm:flex-row my-10 items-center gap-8">
             <div class="wage-violations-text text-justify my-4 w-full">
                 <h1 class="text-3xl font-bold mb-4 text-left">Wage and Hour Violations</h1>
-                <p class="text-lg my-5">Following the Fair Labor Standards Act, the Department of Labor has established guidelines and norms to ensure workers rights to fair wages. They conduct investigations on reports of discriminatory and illegal practices in all legitimate labor industries. The data was initially cleaned and filtered to focus on the <i>city and industry</i> as main variables, with the number of investigations and violations being examined for each. This is meant to highlight patterns in the wage and hour violations reported in different industries, pointing at particular spots that we want to keep an eye on. The analysis uses registered data from 2018 to 2024.</p>
+                <p class="text-lg my-4">Following the Fair Labor Standards Act, the Department of Labor has established guidelines and norms to ensure workers rights to fair wages. They conduct investigations on reports of discriminatory and illegal practices in all legitimate labor industries. The data was initially cleaned and filtered to focus on the <i>city and industry</i> as main variables, with the number of investigations and violations being examined for each. This is meant to highlight patterns in the wage and hour violations reported in different industries, pointing at particular spots that we want to keep an eye on. The analysis uses registered data from 2018 to 2024.</p>
 
                 <div class="industry-city-wh-violations flex flex-col sm:flex-row gap-8">
                     <!-- Column 1: Image + Caption -->
-                    <div class="sm:w-1/3 flex flex-col items-center">
-                        <img class="w-full h-auto rounded-2xl mt-8" src="https://github.com/ElisaCarrascoLanusse/Portfolio/blob/main/assets/images/case_violations_plot.png?raw=true">
+                    <div class="sm:w-1/2 flex flex-col items-center">
+                        <img class="w-full h-auto rounded-2xl" src="https://github.com/ElisaCarrascoLanusse/Portfolio/blob/main/assets/images/case_violations_plot.png?raw=true">
                         <figcaption class="text-sm mt-4 text-center">Proportion of wage and hour case violations by industry category and city (2018-2024) graph.</figcaption>
                     </div>
                 
@@ -99,29 +99,29 @@
         </section>
 
         <!-- OSHA Violations -->
-        <section class="osha-violations w-full left-0 flex flex-wrap overflow-hidden bg-atip text-neutral-50 mx-0 overflow-x-hidden">
-            <div class="osha-violations-text mb-12">
-                <h1 class="text-3xl font-bold text-center mt-12 mb-4">OSHA Violations</h1>
-                <div class="exploration-card bg-neutral-50 text-neutral-800 p-16 w-7/10 mx-auto rounded-2xl inset-shadow-neutral-400 text-center">
+        <section class="w-full left-0 flex flex-wrap overflow-hidden bg-atip text-text mx-0 overflow-x-hidden">
+            <div class="osha-violations-text text-justify flex flex-col my-10 text-lg">
+                <h1 class="text-3xl font-bold text-center mb-4">OSHA Violations</h1>
+                <div class="bg-text text-neutral-800 p-16 rounded-2xl inset-shadow-neutral-400 mx-4 sm:mx-32">
                     <p>The <b>Occupational Safety and Health Administration</b> is the federal agency in charge of creating, maintaining, and enforcing health and safety laws in the workplace. OSHA conducts workplace inspections throughout the year, both in response to complaints/reports and routinely. In inspecting the data I was particularly curious about the nature of inspections, which would give some insight into how common reports are and what conditions lead to investigations by OSHA.</p>
-                    <img class="w-full h-auto rounded-xl mt-8" src="https://github.com/ElisaCarrascoLanusse/Portfolio/blob/main/assets/images/insp_type_year_plot%202.png?raw=true">
+                    <img class="w-full sm:w-2/3 mx-auto h-auto rounded-xl mt-4 self-center" src="https://github.com/ElisaCarrascoLanusse/Portfolio/blob/main/assets/images/insp_type_year_plot%202.png?raw=true">
                     <figcaption class="text-sm mt-4 text-center">Proportion of OSHA inspections by type and year (2018-2024) graph.</figcaption>
-                    <p class="text-center mt-8">There has been a general decrease on both health and safety inspections, however safety inspections are still more common than health inspections overall. 2021 was the year with lowest inspections, most likely due to the increase of remote work and closing of offices due to the pandemic. Planned inspections were the most common overall, however the second most common type was complaint based inspections. 2018 and 2019 had noticeably more inspections than the following years, with 2021 being particularly low in inspections. This further reinforces the likelihood of physical spaces being closed due to the pandemic, relieving some of the pressure on the health and safety risks.</p>
+                    <p class="text-center mt-4">There has been a general decrease on both health and safety inspections, however safety inspections are still more common than health inspections overall. 2021 was the year with lowest inspections, most likely due to the increase of remote work and closing of offices due to the pandemic. Planned inspections were the most common overall, however the second most common type was complaint based inspections. 2018 and 2019 had noticeably more inspections than the following years, with 2021 being particularly low in inspections. This further reinforces the likelihood of physical spaces being closed due to the pandemic, relieving some of the pressure on the health and safety risks.</p>
                 </div>
         </section>
 
         <!--  -->
 
         <!-- Conclusion -->
-        <section class="overview">
-            <div class="text-justify">
-                <h1 class="text-right font-bold text-3xl my-4">Conclusion and Notes</h1>
-                <p>This exploratory investigation was useful in understanding key actors in the current laboral landscape of Eastern Missouri. Other graphs and the R files can be requested through the contact form for anyone interested in looking at the data. The analysis and visualizations were used in a presentation to different stakeholders in the prevention of human trafficking including authorities as a guide to trends and areas to keep an eye on. While working on this project I kept running into one particular issue: <i>the massive gaps in the data</i>. This forced me to step back and look at what was available in order to understand the context under which the lack of data lies.</p> 
-                <p class="mt-8">Specifically when looking at immigrant workers specifically there was almost no mention in the data, mirroring the farming industry which was rarely present in the data. This could in part be explained by the proximity to the city of St. Louis but also shows the need for more research and data collection when it comes to farm labor and the experiences of immigrants within the industry in Eastern Missouri. Future research should focus on filling the gaps in data and possibly the creation of a single data base that contains data from the above resources in order to make tracking these trends more accessible.</p>
+        <section class="mx-8 md:mx-16 flex flex-col sm:flex-row my-10 items-center gap-8">
+            <div class="wage-violations-text text-justify my-4 w-full">
+                <h1 class="text-3xl font-bold mb-4 text-right">Conclusion and Notes</h1>
+                <p class="text-lg my-5">This exploratory investigation was useful in understanding key actors in the current laboral landscape of Eastern Missouri. Other graphs and the R files can be requested through the contact form for anyone interested in looking at the data. The analysis and visualizations were used in a presentation to different stakeholders in the prevention of human trafficking including authorities as a guide to trends and areas to keep an eye on. While working on this project I kept running into one particular issue: <i>the massive gaps in the data</i>. This forced me to step back and look at what was available in order to understand the context under which the lack of data lies.</p> 
+                <p class="text-lg my-4s">Specifically when looking at immigrant workers specifically there was almost no mention in the data, mirroring the farming industry which was rarely present in the data. This could in part be explained by the proximity to the city of St. Louis but also shows the need for more research and data collection when it comes to farm labor and the experiences of immigrants within the industry in Eastern Missouri. Future research should focus on filling the gaps in data and possibly the creation of a single data base that contains data from the above resources in order to make tracking these trends more accessible.</p>
             </div>
         </section>
 
-        <section class="atip-presentation w-1/2 mx-auto mb-8">
+        <section class="atip-presentation sm:w-1/2  mx-auto mb-8">
             <div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%; padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden; border-radius: 8px; will-change: transform;">
                 <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;" src="https://www.canva.com/design/DAGQjgFw25E/enbfHjmGfQPdcqeLcSgT7w/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
                 </iframe>
