@@ -26,6 +26,15 @@ document.addEventListener("DOMContentLoaded", () => {
         addClickEvent("#header-img", () => window.location.href = "./../../index.html");
         addClickEvent("#header-h1", () => window.location.href = "./../../index.html");
         attachNavigationEvents();
+
+        // Move the hamburger toggle inside here so it runs after header loads
+        const menuButton = document.getElementById('menu-button');
+        const menu = document.getElementById('menu');
+        if (menuButton && menu) {
+            menuButton.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+            });
+        }
     }
 
     function attachNavigationEvents() {
