@@ -4,23 +4,9 @@ Hi, I'm Elisa!
 
 Welcome to my portfolio! I'm a sociologist with a passion for the creation and maintaining of public sociology and accessible design. I am also a "todera" and always looking for new projects and hobbies to work on, so feel free to reach out if you'd like to collaborate! I dabble some in drawing, writing, user-experience r&d, and starting on web-design :)
 
-## Notes
-
-Most of the inner functions are not yet fully working:
-
-- Contact form not functional
-- Project buttons not functional
-
-Currently working on separating the header and footer into components for ease of maintenance and updating.
-
 ## Future To Do
-
-- [x] Fix header image (changes color when outside of the main page (index.html))
-- [ ] Other projects carousel
-- [x] Work Page
-- [x] Play page
-- [ ] Project pages
 - [ ] Add functionality to contact form
+- [ ] Set up project galleries
 
 ## Project Structure
 ```
@@ -29,18 +15,32 @@ Currently working on separating the header and footer into components for ease o
 ├── about.html
 ├── assets
 │   ├── fonts
+│   │   ├── Tanker-Regular.ttf
 │   ├── icons
 │   │   ├── github-img.png
 │   │   ├── instagram-img.png
 │   │   └── linkedin-img.png
 │   └── images
+│       ├── AIRPORT.PNG
+│       ├── ATIPMAP_ENG.png
+│       ├── ATIPMAP_SPA.png
+│       ├── UBER_BACK_ENG.png
+│       ├── UBER_BACK_SPA.png
+│       ├── UBER_FRONT_ENG.png
+│       ├── UBER_FRONT_SPA.png
+│       ├── Worker Rights Eng.png
+│       ├── Worker Rights Spa.png
+│       ├── case_violations_plot.png
 │       ├── design-process.png
+│       ├── grad.JPG
 │       ├── header-img.jpeg
 │       ├── iistl-img.png
+│       ├── insp_type_year_plot 2.png
 │       ├── intro-about-img.JPG
 │       ├── intro-image.jpeg
 │       ├── labor-trafficking.png
 │       ├── laboratoria-cover.PNG
+│       ├── memory-dimensions.png
 │       ├── memory-matters-img.png
 │       ├── memory-matters.png
 │       ├── newsletter.PNG
@@ -49,8 +49,12 @@ Currently working on separating the header and footer into components for ease o
 ├── components
 │   ├── contact.html
 │   ├── footer.html
-│   └── header.html
+│   ├── header.html
+│   └── user-personas.html
 ├── index.html
+├── node_modules
+├── package-lock.json
+├── package.json
 ├── play.html
 ├── projects
 │   ├── play
@@ -66,8 +70,8 @@ Currently working on separating the header and footer into components for ease o
 │   ├── projects.js
 │   └── workplay.js
 ├── styles
-│   ├── projects.css
-│   └── style.css
+│   ├── input.css
+│   └── output.css
 └── work.html
 
 ```
