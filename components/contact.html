@@ -5,29 +5,28 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Elisa Carrasco Lanusse Portfolio</title>
         <link rel="stylesheet" href="../styles/output.css">
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
         <script type="text/javascript">
-            (function() {
-                // https://dashboard.emailjs.com/admin/account
-                emailjs.init({
-                publicKey: "t0IUQPqOrEpgYCUJt",
-                });
-            })();
-        </script>
-        <script type="text/javascript">
-            window.onload = function() {
-                document.getElementById('contactForm').addEventListener('submit', function(event) {
+            window.onload = function () {
+                emailjs.init("t0IUQPqOrEpgYCUJt");
+        
+                const form = document.getElementById("contactForm");
+        
+                form.addEventListener("submit", function (event) {
                     event.preventDefault();
-                    // these IDs from the previous steps
-                    emailjs.sendForm('service_rqib3lp', 'template_yrf5cap', this)
+        
+                    emailjs.sendForm("service_rqib3lp", "template_yrf5cap", form)
                         .then(() => {
-                            console.log('SUCCESS!');
-                        }, (error) => {
-                            console.log('FAILED...', error);
+                            console.log("SUCCESS!");
+                            alert("Message sent successfully!");
+                            form.reset();
+                        })
+                        .catch((error) => {
+                            console.error("FAILED...", error);
+                            alert("Something went wrong. Please try again later.");
                         });
                 });
-            }
-        </script>
+            };
+        </script>        
     </head>
     <body> 
             
