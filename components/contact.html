@@ -5,28 +5,26 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Elisa Carrasco Lanusse Portfolio</title>
         <link rel="stylesheet" href="../styles/output.css">
-        <script type="text/javascript">
-            window.onload = function () {
-                emailjs.init("t0IUQPqOrEpgYCUJt");
-        
-                const form = document.getElementById("contactForm");
-        
-                form.addEventListener("submit", function (event) {
-                    event.preventDefault();
-        
-                    emailjs.sendForm("service_rqib3lp", "template_yrf5cap", form)
-                        .then(() => {
-                            console.log("SUCCESS!");
-                            alert("Message sent successfully!");
-                            form.reset();
-                        })
-                        .catch((error) => {
-                            console.error("FAILED...", error);
-                            alert("Something went wrong. Please try again later.");
-                        });
+        <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+        <script>
+        (function() {
+            emailjs.init('t0IUQPqOrEpgYCUJt');
+        })();
+        </script>
+        <script>
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+              event.preventDefault();
+              emailjs.sendForm('service_rqib3lp', 'template_yrf5cap', this)
+                .then(function(response) {
+                  console.log('Email sent!', response.status, response.text);
+                  alert('Email sent successfully!');
+                }, function(error) {
+                  console.error('Error sending email:', error);
+                  alert('Oops! Something went wrong.');
                 });
-            };
-        </script>        
+            });
+          </script>
+        
     </head>
     <body> 
             
@@ -39,7 +37,7 @@
 
                 <p class="relative text-center m-2 text-md">Feel free to reach out to me for any inquiries or collaborations! I look forward to hearing from you :)</p>
 
-                <form class="flex flex-col justify-center items-center gap-2" id="contactForm">
+                <form class="flex flex-col justify-center items-center gap-2" id="contact-form">
                     <div class="flex flex-col gap-2 md:flex-row m-2 justify-center items-center">
                     <input class="bg-text mx-2 text-neutral-800 p-2 py-4 rounded-lg md:w-2/5 w-full" type="text" id="name" name="name" placeholder="Name" required>
 
