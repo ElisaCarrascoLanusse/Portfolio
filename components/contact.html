@@ -5,26 +5,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Elisa Carrasco Lanusse Portfolio</title>
         <link rel="stylesheet" href="../styles/output.css">
-        <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-        <script>
-        (function() {
-            emailjs.init('t0IUQPqOrEpgYCUJt');
-        })();
-        </script>
-        <script>
-            document.getElementById('contact-form').addEventListener('submit', function(event) {
-              event.preventDefault();
-              emailjs.sendForm('service_rqib3lp', 'template_yrf5cap', this)
-                .then(function(response) {
-                  console.log('Email sent!', response.status, response.text);
-                  alert('Email sent successfully!');
-                }, function(error) {
-                  console.error('Error sending email:', error);
-                  alert('Oops! Something went wrong.');
-                });
-            });
-          </script>
-        
     </head>
     <body> 
             
@@ -37,17 +17,22 @@
 
                 <p class="relative text-center m-2 text-md">Feel free to reach out to me for any inquiries or collaborations! I look forward to hearing from you :)</p>
 
-                <form class="flex flex-col justify-center items-center gap-2" id="contact-form">
+                <form name="contact" netlify class="flex flex-col   justify-center items-center gap-2" id="contact-form">
+                    <input type="hidden" name="form-name" value="contact">
+                    
                     <div class="flex flex-col gap-2 md:flex-row m-2 justify-center items-center">
-                    <input class="bg-text mx-2 text-neutral-800 p-2 py-4 rounded-lg md:w-2/5 w-full" type="text" id="name" name="name" placeholder="Name" required>
-
-                    <input class="bg-text mx-2  text-neutral-800 p-2 py-4 rounded-lg w-full md:w-3/5" type="email" id="email" name="email" placeholder="Email" required>
+                      <input class="bg-text mx-2 text-neutral-800 p-2 py-4 rounded-lg md:w-2/5 w-full" type="text" id="name" name="name" placeholder="Name" required>
+                  
+                      <input class="bg-text mx-2  text-neutral-800 p-2 py-4 rounded-lg w-full md:w-3/5" type="email" id="email" name="email" placeholder="Email" required>
                     </div>
-
+                  
                     <textarea class="resize-none bg-text text-neutral-800 p-2 rounded-lg w-7/8 h-35" id="message" name="message" placeholder="Message" required></textarea>
-
-                    <button class="button btn bg-text text-neutral-600 font-extrabold text-m rounded-2xl p-4 max-w-40 w-3xs hover:bg-hover-50 m-2 hover:text-text cursor-pointer" type="submit" id="submit-contact-form">Send</button>
-                </form>
+                  
+                    <button class="button btn bg-text text-neutral-600 font-extrabold text-m rounded-2xl p-4 max-w-40 w-3xs hover:bg-hover-50 m-2 hover:text-text cursor-pointer" type="submit" id="submit-contact-form">
+                      Send
+                    </button>
+                  </form>
+                  
             </div>
         </div>
 
