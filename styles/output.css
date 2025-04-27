@@ -68,6 +68,7 @@
     --color-hover-50: #18B57C;
     --color-memory: #eb5f52;
     --color-atip: #0ab9c9;
+    --color-theology: #bc001b;
   }
 }
 @layer base {
@@ -1386,6 +1387,9 @@
   }
   .bg-text {
     background-color: var(--color-text);
+  }
+  .bg-theology {
+    background-color: var(--color-theology);
   }
   .bg-yellow-300 {
     background-color: var(--color-yellow-300);
