@@ -441,6 +441,9 @@
   .mx-8 {
     margin-inline: calc(var(--spacing) * 8);
   }
+  .mx-16 {
+    margin-inline: calc(var(--spacing) * 16);
+  }
   .mx-auto {
     margin-inline: auto;
   }
@@ -624,6 +627,9 @@
   .w-1\/2 {
     width: calc(1/2 * 100%);
   }
+  .w-1\/5 {
+    width: calc(1/5 * 100%);
+  }
   .w-3xs {
     width: var(--container-3xs);
   }
@@ -644,6 +650,9 @@
   }
   .w-50 {
     width: calc(var(--spacing) * 50);
+  }
+  .w-500 {
+    width: calc(var(--spacing) * 500);
   }
   .w-auto {
     width: auto;
