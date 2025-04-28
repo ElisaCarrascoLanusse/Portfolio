@@ -630,6 +630,9 @@
   .w-1\/5 {
     width: calc(1/5 * 100%);
   }
+  .w-2\/3 {
+    width: calc(2/3 * 100%);
+  }
   .w-3xs {
     width: var(--container-3xs);
   }
