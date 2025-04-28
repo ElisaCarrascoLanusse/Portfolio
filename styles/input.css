@@ -24,7 +24,6 @@
 }
 
 /* Apply Responsive Text Sizing */
-
 @media (min-width: 640px) { /* sm breakpoint */
     html {
         font-size: var(--text-size-md);
