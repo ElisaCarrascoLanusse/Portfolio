@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const cvButton = document.querySelector("#cv-btn");
     if (cvButton) {
         cvButton.addEventListener("click", () => {
-            window.open("https://drive.google.com/file/d/1H79gu7VVV_ltthRGdb4MyrxPU6kkXT_1/view?usp=sharing", "_blank");
+            window.open("https://drive.google.com/file/d/1a0vl8cgyC5yo9xYC5vg5SItyhtk_sNSg/view?usp=sharing", "_blank");
         });
     }
 });

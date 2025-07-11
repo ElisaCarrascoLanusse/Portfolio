@@ -5,107 +5,122 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Elisa Carrasco Lanusse Portfolio</title>
-    <link rel="stylesheet" href="styles/output.css">  
+    <link rel="stylesheet" href="styles/output.css">
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-CT0MB434WT"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-    gtag('config', 'G-CT0MB434WT');
+        gtag('config', 'G-CT0MB434WT');
     </script>
 
 </head>
 
 <body class="body bg-background-75">
-<div id="header"></div>
+    <div id="header"></div>
 
-<main class="main md:mt-0 mx-8 md:mx-16 text-text">
-    <!-- Introduction -->
-    <section class="intro flex flex-col sm:flex-row my-10 items-center gap-8">
-        <figure class="intro-image flex flex-col w-full sm:w-1/2">
-            <img 
-            class="rounded-3xl w-full" 
-            src="https://github.com/ElisaCarrascoLanusse/Portfolio/blob/main/assets/images/intro-image.jpeg?raw=true" 
-            alt="It's me!"> 
-            <figcaption id="intro-caption" class="text-sm mt-2 text-center sm:text-left">I currently live in St. Louis with my partner Jill and our cat Dax (sadly not pictured).</figcaption>
-        </figure>
-        <div class="intro-text flex flex-col align-middle w-full sm:w-1/2 my-auto">
-            <h2 class="text-3xl font-bold text-center  sm:text-left">Hi, I'm Elisa!</h2>
-            <p class="text-lg my-5 text-center sm:text-left">Welcome to my portfolio! I'm a sociologist with a passion for the creation and maintaining of public sociology and accessible design. I am also a <i> "todera" </i> and always looking for new projects and hobbies to work on, so feel free to reach out if you'd like to collaborate! I dabble some in drawing, writing, user-experience r&d, and starting on web-design :)</p>
-            <button class="btn text-lg rounded-2xl w-3xs self-center sm:self-start" id="learn-more-btn">Learn More</button>
-        </div>
-    </section>    
-
-    <!-- Featured Projects -->
-<section class="featured-projects flex flex-col my-10">
-    <!-- Featured Header -->
-    <div class="section-header">
-        <h2>FEATURED PROJECTS</h2>
-        <div class="decor flex-1 bg-text ms-6 p-0.75 rounded-full" id="featured-divider"></div>
-    </div>
-    
-    <!-- Parallax Scroll -->
-    <div class="parallax relative flex flex-col items-center">
-
-        <div class="hidden parallax-card flex-col sm:flex-row" id="project-1">
-            <!-- Left Side: Text Content -->
-            <div class="project-details w-full sm:w-2/3">
-                <h2 class="text-center w-full sm:text-left">Laboratoria: Partnerships Communications</h2> 
-                <p class="text-center w-full sm:text-left">Laboratoria is a Latin American non-profit focused on providing access to tech education for women of vulnerable populations. During my time as an intern with the Partnerships team I worked on improving the design of newsletters. Through UX research and design techniques I worked on fostering deeper bonds with students, graduates, and stakeholders. </p> 
-                <button class="btn-dark rounded-2xl py-8 sm:w-sm sm:py-4 w-auto self-center sm:self-start" id="laboratoria-btn">View Project</button>
-            </div>
-            <!-- Right Side: Image -->
-            <figure class="project-image self-center sm:w-1/3">
-                <img 
-                class="rounded-2xl w-50 sm:w-75 align-middle" 
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStvWMAvhXjBUD4SgK-umiZxPPtjgHmNmNRhw&s" 
-                alt="Laboratoria" 
-                width="100"> 
+    <main class="main md:mt-0 mx-8 md:mx-16 text-text">
+        <!-- Introduction -->
+        <section class="intro flex flex-col sm:flex-row my-10 items-center gap-8">
+            <figure class="intro-image flex flex-col w-full sm:w-1/2">
+                <img class="rounded-3xl w-full"
+                    src="https://github.com/ElisaCarrascoLanusse/Portfolio/blob/main/assets/images/intro-image.jpeg?raw=true"
+                    alt="It's me!">
+                <figcaption id="intro-caption" class="text-sm mt-2 text-center sm:text-left">I currently live and study
+                    in
+                    Pittsburgh with my partner Jill and our cat Dax (sadly not pictured).</figcaption>
             </figure>
-        </div>
-
-
-        <div class="parallax-card flex-col sm:flex-row" id="project-2">
-            <!-- Left Side: Text Content -->
-            <div class="project-details w-full sm:w-2/3">
-                <h2 class="text-center w-full sm:text-left">Memory Matters: Remembering Genocide</h2> 
-                <p class="text-center w-full sm:text-left">Memory Matters was a collaborative comparative historical study of sites of memorialization in Bosnia, Cambodia, and Rwanda. Working with Dr. Quinsaat and two students we developed a framework to analyze memorial sites based on context and perspective. I focused on the Kigali Genocide Memorial and contributed to the overall framework and analysis.</p> 
-                <button class="btn-dark rounded-2xl py-8 sm:w-sm sm:py-4 w-auto self-center sm:self-start" id="memory-btn">View Project</button>
+            <div class="intro-text flex flex-col align-middle w-full sm:w-1/2 my-auto">
+                <h2 class="text-3xl font-bold text-center  sm:text-left">Hi, I'm Elisa!</h2>
+                <p class="text-lg my-5 text-center sm:text-left">Welcome to my portfolio! I'm a sociologist with a
+                    passion for the creation and maintaining of public sociology and accessible design. I am also a <i>
+                        "todera" </i> and always looking for new projects and hobbies to work on, so feel free to reach
+                    out if you'd like to collaborate! I dabble some in drawing, writing, user-experience r&d, and
+                    starting on web-design :)</p>
+                <button class="btn text-lg rounded-2xl w-3xs self-center sm:self-start" id="learn-more-btn">Learn
+                    More</button>
             </div>
-            <!-- Right Side: Image -->
-            <figure class="project-image self-center sm:w-1/3">
-                <img 
-                class="rounded-2xl w-50 sm:w-75 align-middle" 
-                src="https://github.com/ElisaCarrascoLanusse/Portfolio/blob/main/assets/images/memory-matters-img.png?raw=true" 
-                width="100" 
-                alt="Memory Matters"> 
-            </figure>
-        </div>
-        
-        
-        <div class="parallax-card flex-col sm:flex-row" id="project-3">
-            <!-- Left Side: Text Content -->
-            <div class="project-details w-full sm:w-2/3">
-                <h2 class="text-center w-full sm:text-left">Labor Violations: Eastern Missouri</h2> 
-                <p class="text-center w-full sm:text-left">The Anti-Trafficking in Persons team at the International Institute of Saint Louis supports human trafficking-affected individuals in the St. Louis area. During my internship, I analyzed government data on labor violation trends using R to visualize patterns and assist trafficking prevention stakeholders to generate data-based solutions.</p> 
-                <button class="btn-dark rounded-2xl py-8 sm:w-sm sm:py-4 w-auto self-center sm:self-start" id="atip-btn">View Project</button>
-            </div>
-            <!-- Right Side: Image -->
-            <figure class="project-image self-center sm:w-1/3">
-                <img 
-                class="rounded-2xl w-50 sm:w-75 align-middle" 
-                src="https://github.com/ElisaCarrascoLanusse/Portfolio/blob/main/assets/images/iistl-img.png?raw=true" 
-                alt="International Institute of St. Louis" 
-                width="100"> 
-            </figure>
-        </div>
-    </div>
+        </section>
 
-</section>
-<!-- 
+        <!-- Featured Projects -->
+        <section class="featured-projects flex flex-col my-10">
+            <!-- Featured Header -->
+            <div class="section-header">
+                <h2>FEATURED PROJECTS</h2>
+                <div class="decor flex-1 bg-text ms-6 p-0.75 rounded-full" id="featured-divider"></div>
+            </div>
+
+            <!-- Parallax Scroll -->
+            <div class="parallax relative flex flex-col items-center">
+
+                <div class="hidden parallax-card flex-col sm:flex-row" id="project-1">
+                    <!-- Left Side: Text Content -->
+                    <div class="project-details w-full sm:w-2/3">
+                        <h2 class="text-center w-full sm:text-left">Laboratoria: Partnerships Communications</h2>
+                        <p class="text-center w-full sm:text-left">Laboratoria is a Latin American non-profit focused on
+                            providing access to tech education for women of vulnerable populations. During my time as an
+                            intern with the Partnerships team I worked on improving the design of newsletters. Through
+                            UX research and design techniques I worked on fostering deeper bonds with students,
+                            graduates, and stakeholders. </p>
+                        <button class="btn-dark rounded-2xl py-8 sm:w-sm sm:py-4 w-auto self-center sm:self-start"
+                            id="laboratoria-btn">View Project</button>
+                    </div>
+                    <!-- Right Side: Image -->
+                    <figure class="project-image self-center sm:w-1/3">
+                        <img class="rounded-2xl w-50 sm:w-75 align-middle"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStvWMAvhXjBUD4SgK-umiZxPPtjgHmNmNRhw&s"
+                            alt="Laboratoria" width="100">
+                    </figure>
+                </div>
+
+
+                <div class="parallax-card flex-col sm:flex-row" id="project-2">
+                    <!-- Left Side: Text Content -->
+                    <div class="project-details w-full sm:w-2/3">
+                        <h2 class="text-center w-full sm:text-left">Memory Matters: Remembering Genocide</h2>
+                        <p class="text-center w-full sm:text-left">Memory Matters was a collaborative comparative
+                            historical study of sites of memorialization in Bosnia, Cambodia, and Rwanda. Working with
+                            Dr. Quinsaat and two students we developed a framework to analyze memorial sites based on
+                            context and perspective. I focused on the Kigali Genocide Memorial and contributed to the
+                            overall framework and analysis.</p>
+                        <button class="btn-dark rounded-2xl py-8 sm:w-sm sm:py-4 w-auto self-center sm:self-start"
+                            id="memory-btn">View Project</button>
+                    </div>
+                    <!-- Right Side: Image -->
+                    <figure class="project-image self-center sm:w-1/3">
+                        <img class="rounded-2xl w-50 sm:w-75 align-middle"
+                            src="https://github.com/ElisaCarrascoLanusse/Portfolio/blob/main/assets/images/memory-matters-img.png?raw=true"
+                            width="100" alt="Memory Matters">
+                    </figure>
+                </div>
+
+
+                <div class="parallax-card flex-col sm:flex-row" id="project-3">
+                    <!-- Left Side: Text Content -->
+                    <div class="project-details w-full sm:w-2/3">
+                        <h2 class="text-center w-full sm:text-left">Labor Violations: Eastern Missouri</h2>
+                        <p class="text-center w-full sm:text-left">The Anti-Trafficking in Persons team at the
+                            International Institute of Saint Louis supports human trafficking-affected individuals in
+                            the St. Louis area. During my internship, I analyzed government data on labor violation
+                            trends using R to visualize patterns and assist trafficking prevention stakeholders to
+                            generate data-based solutions.</p>
+                        <button class="btn-dark rounded-2xl py-8 sm:w-sm sm:py-4 w-auto self-center sm:self-start"
+                            id="atip-btn">View Project</button>
+                    </div>
+                    <!-- Right Side: Image -->
+                    <figure class="project-image self-center sm:w-1/3">
+                        <img class="rounded-2xl w-50 sm:w-75 align-middle"
+                            src="https://github.com/ElisaCarrascoLanusse/Portfolio/blob/main/assets/images/iistl-img.png?raw=true"
+                            alt="International Institute of St. Louis" width="100">
+                    </figure>
+                </div>
+            </div>
+
+        </section>
+        <!-- 
     <section class="other-projects flex flex-col my-10">
         <div class="section-header">
             <h2 class="text-3xl font-bold">OTHER PROJECTS</h2>
@@ -119,15 +134,16 @@
     </div> 
 -->
 
-    <div id="contact-form-cont"></div>
+        <div id="contact-form-cont"></div>
 
-</main>
+    </main>
 
 
-<!-- Footer -->
+    <!-- Footer -->
     <div id="footer"></div>
 
-<script src="scripts/main.js"></script>
-<script src="scripts/home.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/home.js"></script>
 </body>
+
 </html>
