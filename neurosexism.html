@@ -21,8 +21,8 @@
     <section class="flex flex-wrap justify-center items-center flex-col gap-8 mb-16 w-full">
         <div class="text-center space-y-4 w-full">
           <h2 class="text-xl font-bold">With Elisa Carrasco Lanusse, Lissie Morales, and Evan Stowe</h2>
-          <div class="flex flex-row gap-8 justify-center">
-            <div class="w-1/2">
+          <div class="flex flex-col sm:flex-row gap-8 justify-center">
+            <div class="sm:w-1/2">
               <p class="text-justify flex-1 ">
                   As the final project for "Knowledge and Society: Sex, Gender, Sexuality, and the Brain Sciences", 
                   we decided to create a podcast episode as a way of more accessibly engaging with the content of 
@@ -31,12 +31,12 @@
                   problematize Western academia's perspective and suggest the need for inclusion beyond the subject of 
                   study and behind the research itself.
               </p>
-              <div class="flex flex-row gap-8 mx-auto my-4">
+              <div class="flex sm:flex-row flex-col gap-8 mx-auto my-4">
                 <button class="btn" onclick="window.open('assets/neurosexismscript.pdf','_blank')">View Script</button>
                 <button class="btn" onclick="window.open('assets/neurosexismresources.pdf','_blank')">View Resources</button>
               </div>
               </div>
-            <figure class="self-center w-1/2">
+            <figure class="self-center sm:-1/2">
                   <img 
                     class="rounded-2xl w-full align-middle mx-auto"
                     src="assets/images/neurosexism.png"
@@ -46,7 +46,7 @@
           </div>
             <div class="audio-player w-full my-0">
               <audio class="w-full rounded-xl" controls>
-                <source src="assets/audio/neuroseximpod.m4a" type="audio/mpeg">
+                <source src="assets/audio/neuroseximpod.m4a" type="audio/mp4" preload="metadata">
               </audio>
             </div>
         </div>  
